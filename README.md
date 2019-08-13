@@ -9,9 +9,9 @@ Members:
 
 ## Project Links
 
-Discord:
-Google Doc:
-Group Project:
+Discord: https://www.fake.com
+Google Doc: https://www.fake.com
+Group Project: https://www.fake.com
 
 
 ## Use Cases
