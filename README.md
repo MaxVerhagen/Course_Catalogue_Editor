@@ -1,5 +1,5 @@
 ## esas-2-group-project Team 1
-Members:
+**Members:**
 
 * a1725532 - Max Verhagen
 * a1724281 - Basil Dimopoulos
@@ -16,7 +16,7 @@ Members:
 
 ## Use Cases
 
-**Teachers**
+**Teachers:**
 
-**Admin**
+**Admin:**
 
