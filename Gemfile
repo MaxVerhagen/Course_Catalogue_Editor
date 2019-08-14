@@ -50,13 +50,72 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
-end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Use bootstrap framework for css
+gem 'bootstrap', '~> 4.3.1'
+
+#################################
+####### APP SPECIFIC GEMS #######
+#################################
+
+group :production do
+  gem 'pg'  # for Heroku deployment
+  gem 'rails_12factor'
+end
+
+# cucumber and Rspec
+group :development, :test do
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions - almost RSpec 3 compatible
+  gem 'database_cleaner'               # to clear Cucumber's test database between runs
+  gem 'capybara', '2.18.0'             # to avoid deprecation warnings
+  gem 'cucumber', '2.99.0'             # to avoid bug in cucumber 3
+  gem 'launchy'                        # a useful debugging aid for user stories
+  gem 'webdrivers', '~> 3.0'
+  gem 'factory_bot_rails'
+
+  # Unit testing framework
+  gem 'autotest'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
+
+  # Allows to build test ActiveRecord models for each test
+  gem 'with_model'
+
+  # Code coverage for Ruby
+  gem 'simplecov', require: false
+end
+
+group :development do
+  # Run Rspec when files have changed
+  gem 'guard-rspec', require: false
+  # Run Cucumber when files have changed
+  gem 'guard-cucumber', require: false
+  # This gem implements the rspec command for Spring
+  gem 'spring-commands-rspec'
+  # Automatically bundle when the Gemfile has been changed 
+  gem 'guard-bundler', require: false
+  # Static analysis 
+  gem 'rubocop', require: false
+end
+
+# Html templating markup language
+gem 'haml-rails'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Enables use of sortable lists using jquery ui
+gem 'jquery-ui-rails'
+gem 'rails_sortable'
+
+# To display beautiful charts
+gem "chartkick"
+
+# Allows for safe use of and and
+gem 'andand'
+
+# Enables pretty console (ap)
+gem 'awesome_print', require:'ap'
