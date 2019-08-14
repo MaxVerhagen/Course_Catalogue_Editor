@@ -9,9 +9,10 @@
 
 ## Project Links
 
-- Discord: https://www.fake.com 
-- Google Doc: https://www.fake.com
-- Group Project: https://www.fake.com
+- Discord: https://discord.gg/KKv6g6
+- Requirments: https://docs.google.com/document/d/17SWQQZ8EjLlvHuJJN8zm39TICQgcPtvzk8-Dv7JEDrA/edit?usp=sharing
+- Help Doc: https://docs.google.com/document/d/1vTWzL7T703SYHJ9BxLiv5ZNZECPSWMLLV8CTyG3jtys/edit?usp=sharing
+- Group Project: n/a
 
 
 ## Use Cases
