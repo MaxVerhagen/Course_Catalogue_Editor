@@ -1,0 +1,50 @@
+%h1 TEMP people soft recreate
+%h2 Catalog Data
+%h5 Course ID:		IDNUM <!--ID num needs to be programmed --!>
+<!-- THIS IS WHERE THE OUTER DIV SHOULD GO  --!>
+%b *Effective Start Date:
+=date_select "effective date", "start date", { start_year: Date.today.year}      
+%br
+
+%b *Status: 
+%select{ :name=>"status" }
+  %option{:value => "1"}= "Inactive"
+  %option{:value => "2"}= "Active" 
+
+%b *Description:
+=text_field(:desciption, "Decription")
+%br
+%br
+%b Long Course Title:                  
+=text_area(:long_title, "Long Course Title", cols: 100, rows: 1)
+%br
+%b Long Description 
+=text_field(:long_description, "Long Couse Description", cols: 100, rows: 5)
+%br
+<!-- start of inner div/table --!>
+%br
+%br
+%table
+  %th Course units/Hours/Count
+  %br
+  %tr
+    %td <b> Minimum Units  </b>
+    %td= number_field_tag name: "min_units", min:0, step: 1
+    %td <b> Last Course of Mil Term Seq </b>
+    %td= check_box_tag 'last_of_mult_term'
+  %tr
+    %td <b> Maximum Units  </b>
+    %td= number_field_tag name: "max_units", min:3, step: 1
+    %td <b> *Enrolement Unit Load Calc Type </b>
+    %td= select_tag "calc_type", raw("<option>Actual Units Calculation</option><option>Progress Units Calculation</option>")
+    
+
+
+
+
+
+
+%h2 Offerings
+%h2 Conponents
+%h2 Scheduling
+%h2 Publication 
