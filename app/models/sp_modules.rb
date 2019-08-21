@@ -1,0 +1,2 @@
+class SpModule < PsoftDbBase
+end
