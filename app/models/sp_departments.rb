@@ -1,0 +1,2 @@
+class SpDepartment < PsoftDbBase
+end

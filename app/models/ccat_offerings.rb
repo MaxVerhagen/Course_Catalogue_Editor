@@ -1,0 +1,2 @@
+class CcatOffering < PsoftDbBase
+end
