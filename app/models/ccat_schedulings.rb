@@ -1,0 +1,2 @@
+class CcatScheduling < PsoftDbBase
+end
