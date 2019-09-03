@@ -1,0 +1,10 @@
+= form_for @acad_org do |f|
+  - if @acad_org.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@acad_org.errors.count, "error")} prohibited this acad_org from being saved:"
+      %ul
+        - @acad_org.errors.full_messages.each do |message|
+          %li= message
+
+  .actions
+    = f.submit 'Save'

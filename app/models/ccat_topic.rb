@@ -1,0 +1,2 @@
+class CcatTopic < PsoftDbBase
+end

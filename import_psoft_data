@@ -1,0 +1,13 @@
+.mode csv
+.import ACAD_ORG_TBL-6429077.csv acad_orgs
+.import ACAD_PROG_TBL_FULL_6458449.csv acad_progs
+.import CLS_CMBND_SECT_FULL-6385825.csv all_classes
+.import CM_CRSE_CAT_ECMS-6383074.csv ccat_catalogs
+.import CM_CRSE_CAT_ECMS_COMPONENTS-6383069.csv ccat_components
+.import CM_CRSE_CAT_ECMS_OFFERINGS-6383075.csv ccat_offerings
+.import CM_CRSE_CAT_ECMS_OWNERS-6383080.csv ccat_owners
+.import CM_CRSE_CAT_ECMS_PUBLICATION-6383062.csv ccat_publications
+.import CM_CRSE_CAT_ECMS_SCHEDULING-6383072.csv ccat_schedulings
+.import CM_CRSE_CAT_ECMS_TOPICS-6383077.csv ccat_topics
+.import EN_BY_CLASS_ECMS-6384857.csv full_enrolments
+.import PRG_ECMS_PROG_PLAN_6458452.csv acad_plans

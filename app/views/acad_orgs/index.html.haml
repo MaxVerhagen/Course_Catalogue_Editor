@@ -1,0 +1,21 @@
+%h2.display-4 Available Faculties
+
+%table
+  %thead{:class => 'table table-hover'}
+    %tr.thead-dark
+      %th Organisations
+      %th View
+      %th Edit
+      %th Destroy
+
+  %tbody
+    - @acad_orgs.each do |acad_org|
+      %tr
+        %td= acad_orgs.Acad_Org
+        %td= link_to 'Show', acad_org
+        %td= link_to 'Edit', edit_acad_org_path(acad_org)
+        %td= link_to 'Destroy', acad_org, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Acad org', new_acad_org_path

@@ -1,0 +1,2 @@
+class CcatOwner < PsoftDbBase
+end

@@ -1,0 +1,17 @@
+# SQLite version 3.x
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+ 
+development:
+  <<: *default
+  database: db/psoft.sqlite3
+
+test:
+  <<: *default
+  database: db/psoft.sqlite3
+ 
+production:
+  <<: *default
+  database: db/psoft.sqlite3

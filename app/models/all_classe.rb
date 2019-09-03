@@ -1,0 +1,2 @@
+class AllClasse < PsoftDbBase
+end
