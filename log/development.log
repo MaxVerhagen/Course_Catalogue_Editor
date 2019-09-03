@@ -232,3 +232,1022 @@ Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.1ms)
   ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for 129.127.210.174 at 2019-09-02 01:40:09 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 17ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 01:40:15 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  Rendered acad_orgs/index.html.haml within layouts/application (5007.0ms)
+Completed 500 Internal Server Error in 5014ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use):
+     8:       %th
+     9: 
+    10:   %tbody
+    11:     - @acad_orgs.each do |acad_org|
+    12:       %tr
+    13:         %td= link_to 'Show', acad_org
+    14:         %td= link_to 'Edit', edit_acad_org_path(acad_org)
+  
+app/views/acad_orgs/index.html.haml:11:in `_app_views_acad_orgs_index_html_haml__207197511550096325_39436380'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAcadOrgs (20190827125413)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190827125413_create_acad_orgs.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190827125413_create_acad_orgs.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+Started GET "/" for 129.127.210.174 at 2019-09-02 01:48:06 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 129.127.210.174 at 2019-09-02 01:48:23 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/index/temp" for 129.127.210.174 at 2019-09-02 01:48:32 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index/temp"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/ec2-user/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190827125413)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190814101606),
+(20190819020446);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 02:17:21.868834"], ["updated_at", "2019-09-02 02:17:21.868834"]]
+  ↳ db/schema.rb:13
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190827125413)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190814101606),
+(20190819020446);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 02:17:21.931337"], ["updated_at", "2019-09-02 02:17:21.931337"]]
+  ↳ db/schema.rb:13
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-02 02:17:21.939138"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (4.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2019-09-02 02:18:11.113728"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-02 02:18:11.122792"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (7.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190827125413)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (4.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2019-09-02 02:19:11.596963"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-02 02:19:11.610821"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for 129.127.210.174 at 2019-09-02 02:23:27 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 02:23:31 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:11
+  Rendered acad_orgs/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 275ms (Views: 270.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/acad_orgs/new" for 129.127.210.174 at 2019-09-02 02:23:36 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#new as HTML
+  Rendering acad_orgs/new.html.haml within layouts/application
+  Rendered acad_orgs/_form.html.haml (2.8ms)
+  Rendered acad_orgs/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 37ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 02:23:37 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:11
+  Rendered acad_orgs/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 129.127.210.174 at 2019-09-02 02:28:39 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 02:28:41 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:11
+  Rendered acad_orgs/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 175ms (Views: 171.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 129.127.210.174 at 2019-09-02 02:32:29 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 02:32:32 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 175ms (Views: 171.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 129.127.210.174 at 2019-09-02 02:33:23 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.174 at 2019-09-02 02:33:25 +0000
+Cannot render console from 129.127.210.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 176ms (Views: 172.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 129.127.210.158 at 2019-09-03 06:37:09 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 06:37:14 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 303ms (Views: 298.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 129.127.210.158 at 2019-09-03 06:40:23 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 13ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 06:40:26 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 177ms (Views: 173.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to AcadOrgs (20190903070405)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903070405"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190903070405)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190814101606),
+(20190819020446);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 07:28:35.486363"], ["updated_at", "2019-09-03 07:28:35.486363"]]
+  ↳ db/schema.rb:13
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:20
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190903070405)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190814101606),
+(20190819020446);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 07:28:35.553017"], ["updated_at", "2019-09-03 07:28:35.553017"]]
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-03 07:28:35.561372"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (5.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  ↳ db/schema.rb:35
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  ↳ db/schema.rb:48
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  ↳ db/schema.rb:54
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  ↳ db/schema.rb:74
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  ↳ db/schema.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  ↳ db/schema.rb:89
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  ↳ db/schema.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  ↳ db/schema.rb:102
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  ↳ db/schema.rb:102
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  ↳ db/schema.rb:123
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  ↳ db/schema.rb:123
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  ↳ db/schema.rb:132
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  ↳ db/schema.rb:132
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  ↳ db/schema.rb:157
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  ↳ db/schema.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  ↳ db/schema.rb:194
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  ↳ db/schema.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  ↳ db/schema.rb:208
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  ↳ db/schema.rb:208
+  [1m[35m (6.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:228
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:228
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  ↳ db/schema.rb:233
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:233
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  ↳ db/schema.rb:261
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:261
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  ↳ db/schema.rb:270
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  ↳ db/schema.rb:270
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  ↳ db/schema.rb:312
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:312
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  ↳ db/schema.rb:321
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  ↳ db/schema.rb:321
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  ↳ db/schema.rb:336
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  ↳ db/schema.rb:336
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  ↳ db/schema.rb:353
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:353
+  [1m[35m (5.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:363
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:363
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190827125413)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_orgs"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "acad_orgs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Acad_Org" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "FormalDesc" text, "Institution" text, "Campus" text, "MgrID" text, "Instr_Edit" text, "Campus_Edit" text, "Subject_Edit" text, "Course_Edit" text, "AOU_Code" text, "DeptID" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_plans"[0m
+  ↳ db/schema.rb:35
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "acad_plans" ("Acad_Group" text, "Acad_Prog" text, "Prog_Eff_Date" text, "Acad_Plan" text, "Eff_Date" text, "Status" text, "Descr" text, "Short_Desc" text, "Plan_Owner" text, "Pct_Owned" text)[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "acad_progs"[0m
+  ↳ db/schema.rb:48
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "acad_progs" ("Acad_Prog" text, "Descr" text, "Acad_Org" text)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "all_classes"[0m
+  ↳ db/schema.rb:54
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "all_classes" ("Term" text, "Course_ID" text, "Offer_Nbr" text, "Class_Nbr" text, "Section" text, "Enrl_Stat" text, "Class_Stat" text, "Assoc" text, "Session" text, "Auto_Enrol" text, "Auto_Enr_2" text, "Class_Type" text, "Cap_Enrl" text, "Tot_Enrl" text, "Comb_Sects_ID" text, "Combined_Sect_Cap_Enrl" text, "Combined_Sect_Tot_Enrl" text)[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_catalogs"[0m
+  ↳ db/schema.rb:74
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ccat_catalogs" ("Eff_Date" text, "Course_ID" text, "Status" text, "Short_Title" text, "Long_Title" text, "Min_Units" text, "Max_Units" text, "Prgrss_Unt" text, "Grading" text, "Last_Crse" text, "Enrl_Unt_Calc" text, "Descr" text)[0m
+  ↳ db/schema.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_components"[0m
+  ↳ db/schema.rb:89
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ccat_components" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Primary_Component" text, "Enrol_Component" text, "Final_Exam" text, "Sect_Size" text, "Contact" text, "SPlus_Templates_Reqd" text, "Component" text)[0m
+  ↳ db/schema.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_offerings"[0m
+  ↳ db/schema.rb:102
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ccat_offerings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Acad_Group" text, "Subject" text, "Catalogue" text, "Approved" text, "Campus" text, "Sch_Print" text, "Cat_Print" text, "Print" text, "Acad_Org" text, "Career" text, "Schedule_Course" text, "Band_ID" text, "Rq_Group" text, "Discp_Grp_Cd" text, "Field_of_Ed_Cd" text)[0m
+  ↳ db/schema.rb:102
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_owners"[0m
+  ↳ db/schema.rb:123
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ccat_owners" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Offering_Acad_Org" text, "Owner_Acad_Org" text, "Pct_Owned" text)[0m
+  ↳ db/schema.rb:123
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_publications"[0m
+  ↳ db/schema.rb:132
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ccat_publications" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "Contact_Hours_YN" text, "Contact_Hours" text, "Restriction_YN" text, "Restriction" text, "Avail_NAWD" text, "Quota_YN" text, "Quota" text, "Pre-Requisite_YN" text, "Pre-Requisite" text, "Co-Requisite_YN" text, "Co-Requisite" text, "Assumed_Knowl_YN" text, "Assumed_Knowl" text, "Incompatible_YN" text, "Incompatible" text, "Assessment_YN" text, "Assessment" text, "Biennial_Course_YN" text, "Biennial_Course" text)[0m
+  ↳ db/schema.rb:132
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_schedulings"[0m
+  ↳ db/schema.rb:157
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "ccat_schedulings" ("Eff_Date" text, "Course_ID" text, "Offer_Nbr" text, "TTble_for_SPlus" text, "Est_Enrol_Total" text, "Enrol_Component" text, "Summer_Semester" text, "Semester_1" text, "Winter_Semester" text, "Semester_2" text, "Trimester_1" text, "Trimester_2" text, "Trimester_3" text, "Quadmester_1" text, "Quadmester_2" text, "Quadmester_3" text, "Quadmester_4" text, "PCE_1" text, "PCE_2" text, "PCE_3" text, "Summer_Crse_Coordinator" text, "Sem1_Crse_Coordinator" text, "Winter_Crse_Coordinator" text, "Sem2_Crse_Coordinator" text, "Tri1_Crse_Coordinator" text, "Tri2_Crse_Coordinator" text, "Tri3_Crse_Coordinator" text, "Quad1_Crse_Coordinator" text, "Quad2_Crse_Coordinator" text, "Quad3_Crse_Coordinator" text, "Quad4_Crse_Coordinator" text, "PCE1_Crse_Coordinator" text, "PCE2_Crse_Coordinator" text, "PCE3_Crse_Coordinator" text)[0m
+  ↳ db/schema.rb:157
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ccat_topics"[0m
+  ↳ db/schema.rb:194
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ccat_topics" ("Subject" text, "Catalogue" text, "Eff_Date" text, "Course_ID" text, "Topic_ID" text, "Descr" text, "Short_Desc" text, "Repeatable" text, "Allowd_Unt" text, "Allow_Comp" text, "FormalDesc" text)[0m
+  ↳ db/schema.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "full_enrolments"[0m
+  ↳ db/schema.rb:208
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "full_enrolments" ("ID" text, "Term" text, "Class_Nbr" text, "Status" text, "Reason" text, "Acad_Prog" text, "Add_Dt" text, "Drop_Dt" text, "Unit_Taken" text, "Progress" text, "Grade" text, "Grade_In" text, "Grade_Dt" text, "Sdt_Positn" text, "Grd_Points" text, "Note_ID" text, "Rpt_Candidat" text)[0m
+  ↳ db/schema.rb:208
+  [1m[35m (7.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "psoft_db_bases"[0m
+  ↳ db/schema.rb:228
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "psoft_db_bases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:228
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_templates"[0m
+  ↳ db/schema.rb:233
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "sp_activity_templates" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:233
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activity_types"[0m
+  ↳ db/schema.rb:261
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "sp_activity_types" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:261
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_activitys"[0m
+  ↳ db/schema.rb:270
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "sp_activitys" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "module" text, "factor" text, "studentset" text, "sametime" text, "activity_template" text, "planned_size" text, "duration" text, "weeks" text, "named_availability" text, "scheduled" text, "scheduled_time" text, "activity_type" text, "suggested_time" text, "suggested_time_pattern" text, "suggested_day" text, "allocated_staff" text, "allocated_location" text, "allocated_studentset" text, "allocated_module" text, "preset_staff_number" text, "preset_staff" text, "preset_locations_number" text, "preset_location" text, "preset_suitability" text, "preset_module" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "scheduled_week_pattern" text, "scheduled_day_pattern" text, "scheduled_time_pattern" text, "class" text)[0m
+  ↳ db/schema.rb:270
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_departments"[0m
+  ↳ db/schema.rb:312
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "sp_departments" ("hostkey" text, "name" text, "description" text, "department" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:312
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_locations"[0m
+  ↳ db/schema.rb:321
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "sp_locations" ("hostkey" text, "name" text, "description" text, "department" text, "size" text, "weeks" text, "unavailable" text, "usertext1" text, "usertext4" text, "sharewith" text, "avoidconcurrency" text, "suitability" text)[0m
+  ↳ db/schema.rb:321
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_modules"[0m
+  ↳ db/schema.rb:336
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "sp_modules" ("hostkey" text, "name" text, "description" text, "department" text, "linkq" text, "size" text, "planned_size" text, "weeks" text, "named_availability" text, "tag" text, "unavailable" text, "usertext1" text, "usertext4" text, "programme" text)[0m
+  ↳ db/schema.rb:336
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sp_suitabilitys"[0m
+  ↳ db/schema.rb:353
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "sp_suitabilitys" ("hostkey" text, "name" text, "description" text, "department" text, "location" text, "usertext1" text, "usertext4" text)[0m
+  ↳ db/schema.rb:353
+  [1m[35m (8.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "widgets"[0m
+  ↳ db/schema.rb:363
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "widgets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:363
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190827125413)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2019-09-03 07:29:16.586043"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-03 07:29:16.596788"], ["key", "environment"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for 129.127.210.158 at 2019-09-03 07:29:51 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 07:29:55 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 206ms (Views: 202.0ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/" for 129.127.210.158 at 2019-09-03 07:30:29 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 07:30:32 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 207ms (Views: 203.5ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 07:31:27 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 217ms (Views: 207.6ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 07:35:38 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 239ms (Views: 228.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/acad_orgs/new" for 129.127.210.158 at 2019-09-03 07:35:41 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#new as HTML
+  Rendering acad_orgs/new.html.haml within layouts/application
+  Rendered acad_orgs/_form.html.haml (2.9ms)
+  Rendered acad_orgs/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/acad_orgs" for 129.127.210.158 at 2019-09-03 07:35:43 +0000
+Cannot render console from 129.127.210.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AcadOrgsController#index as HTML
+  Rendering acad_orgs/index.html.haml within layouts/application
+  [1m[36mAcadOrg Load (0.1ms)[0m  [1m[34mSELECT "acad_orgs".* FROM "acad_orgs"[0m
+  ↳ app/views/acad_orgs/index.html.haml:12
+  Rendered acad_orgs/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.1ms)
+
+
