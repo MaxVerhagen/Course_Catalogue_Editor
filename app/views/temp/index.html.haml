@@ -30,12 +30,12 @@
   %tr
     %td <b> Minimum Units  </b>
     %td= number_field_tag name: "min_units", min:0, step: 1
-    %td <b> Last Course of Mil Term Seq </b>
+    %td <b> Last Course of Mult Term Seq </b>
     %td= check_box_tag 'last_of_mult_term'
   %tr
     %td <b> Maximum Units  </b>
     %td= number_field_tag name: "max_units", min:0, step: 1
-    %td <b> *Enrolement Unit Load Calc Type </b>
+    %td <b>Enrolement Unit Load Calc Type </b>
     %td= select_tag "calc_type", raw("<option>Actual Units Calculation</option><option>Progress Units Calculation</option>")
   %tr
     %td <b> Academic Progress Units  </b>
@@ -52,7 +52,7 @@
   %th Course Grading
   %br
   %tr
-    %td <b> *Grading Basis: </b>
+    %td <b>Grading Basis: </b>
     %td= select_tag "grading_basis", raw("<option>M10</option><option>M11</option><option>GS8</option><option>GS5</option>NOG</option>")
     <!--The rest of the stuff in the screenshots in this section don't show up on the data, need to clarify whats up  --!> 
     <!-- Course Topics functionality should be added around here --!>
@@ -65,7 +65,7 @@
   %tr
     %td <b>Offering Number </b>
     %td= number_field_tag name: "offering_num", min:0, step: 1
-    %td <b> *Catalog Number</b>
+    %td <b>Catalog Number</b>
     %td= text_field_tag name: "catalog_num" 
   %tr
     %td <b>Subject</b>
@@ -78,6 +78,21 @@
     %td <b>Schedule Course</b>
     %td= select_tag "schedule_course", raw("<option>Yes</option><option>No</option>")
     <!-- add functionality to add multiple owners --!>
+
+  <!-- for each where catalogue number is the same as the current course --!>
+  %tr
+    %td <b>Primary Component</b>
+    %td= text_field_tag name: "primary_component"
+    %td <b>Section Size</b>
+    %td= number_field_tag name: "sect_size", min:0
+  %tr
+    %td <b>Contact Hours</b>
+    %td= number_field_tag name: "contact", min:0, step:0.5
+    %td <b>Splus Templates Required</b>
+    %td= number_field_tag name: "splus_templates"
+  %tr
+    %td <b>Component</b>
+    %td= select_tag "component", raw("<option>LEC</option><option>SEM</option><option>TUT</option><option>WRK</option>")
 
 
 
