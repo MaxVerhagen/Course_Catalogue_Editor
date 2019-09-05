@@ -1,0 +1,2 @@
+class SpActivityType < PsoftDbBase
+end

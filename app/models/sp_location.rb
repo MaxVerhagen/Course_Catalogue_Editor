@@ -1,0 +1,2 @@
+class SpLocation < PsoftDbBase
+end
