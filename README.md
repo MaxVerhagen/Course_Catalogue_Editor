@@ -6,6 +6,7 @@
 * a1724402 - Dan Bruer
 * a1711582 - Luyang Wang
 * a1719719 - Elijah Hughes
+* a1720458 - Parthey Bhatt
 
 ## Project Links
 
