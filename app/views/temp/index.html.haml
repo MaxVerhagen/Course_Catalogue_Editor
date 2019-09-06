@@ -80,6 +80,8 @@
     <!-- add functionality to add multiple owners --!>
 
   <!-- for each where catalogue number is the same as the current course --!>
+%h2 Components
+%table
   %tr
     %td <b>Primary Component</b>
     %td= text_field_tag name: "primary_component"
@@ -92,14 +94,77 @@
     %td= number_field_tag name: "splus_templates"
   %tr
     %td <b>Component</b>
-    %td= select_tag "component", raw("<option>LEC</option><option>SEM</option><option>TUT</option><option>WRK</option>")
-
-
-
-%h2 Conponents
-
-
+    %td= text_field_tag name: "component"
 
 
 %h2 Scheduling
+%table
+  %tr
+    %td <b>Timetabled in sPlus</b>
+    %td= check_box_tag "timetable"
+  %br
+  %tr
+    %td Term Schedule
+    %td
+    %td Course co-ord id
+  %tr
+    %td <b>Summber Semester</b>
+    %td= check_box_tag "summer"
+    %td= text_field_tag name: "summer_coord"
+  %tr
+    %td <b>Semester 1</b>
+    %td= check_box_tag "sem1"
+    %td= text_field_tag name: "sem1_coord"
+  %tr
+    %td <b>Winter Semester</b>
+    %td= check_box_tag "winter"
+    %td= text_field_tag name: "winter_coord"
+  %tr
+    %td <b>Semester 2</b>
+    %td= check_box_tag "sem2"
+    %td= text_field_tag name: "sem2_coord"
+  %tr
+    %td <b>Trimester 1</b>
+    %td= check_box_tag "tri1"
+    %td= text_field_tag name: "tri1_coord"
+  %tr
+    %td <b>trimester 2</b>
+    %td= check_box_tag "tri2"
+    %td= text_field_tag name: "tri2_coord"
+  %tr
+    %td <b>Trimester 3</b>
+    %td= check_box_tag "tri3"
+    %td= text_field_tag name: "tri3_coord"
+  %tr
+    %td <b>PCE 1</b>
+    %td= check_box_tag "pce1"
+    %td= text_field_tag name: "pce1_coord"
+  %tr
+    %td <b>PCE 2</b>
+    %td= check_box_tag "pce2"
+    %td= text_field_tag name: "pce2_coord"
+  %tr
+    %td <b>PCE 3</b>
+    %td= check_box_tag "pce3"
+    %td= text_field_tag name: "pce3_coord"
+  %tr
+    %td <b>Quadmester 1</b>
+    %td= check_box_tag "quad1"
+    %td= text_field_tag name: "quad1_coord"
+  %tr
+    %td <b>Quadmester 2</b>
+    %td= check_box_tag "quad2"
+    %td= text_field_tag name: "quad2_coord"
+  %tr
+    %td <b>Quadmester 3</b>
+    %td= check_box_tag "quad3"
+    %td= text_field_tag name: "quad3_coord"
+  %tr
+    %td <b>Quadmester 4</b>
+    %td= check_box_tag "quad4"
+    %td= text_field_tag name: "quad4_coord"
+
+
+
+
 %h2 Publication 
