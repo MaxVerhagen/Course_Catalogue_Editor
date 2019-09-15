@@ -1,2 +1,0 @@
-class CcatCatalog < PsoftDbBase
-end

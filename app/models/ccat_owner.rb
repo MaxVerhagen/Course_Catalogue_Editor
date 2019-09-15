@@ -1,2 +1,0 @@
-class CcatOwner < PsoftDbBase
-end
