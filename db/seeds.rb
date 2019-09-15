@@ -9,8 +9,11 @@
 require 'csv'
 
 course_catalogue_data = File.read(Rails.root.join('lib', 'seeds', 'course_catalogue.csv'), encoding: 'ISO-8859-1')
+organisation_data = File.read(Rails.root.join('lib', 'seeds', 'organisation.csv'), encoding: 'ISO-8859-1')
+# course_offering_data = File.read(Rails.root.join('lib', 'seeds', 'course_offering.csv'), encoding: 'ISO-8859-1')
 
 course_catalogue_table = CSV.parse(course_catalogue_data, headers: true)
+organisation_table = CSV.parse(organisation_data, headers: true)
 
 course_catalogue_table.each do |row|
 	c = Course.new
@@ -30,3 +33,17 @@ course_catalogue_table.each do |row|
 	c.save
 	puts "#{c.short_title}, #{c.admin_course_id} saved" 
 end
+
+organisation_table.each do |row|
+	o = Organisation.new
+	o.effective_date = Date.parse(row['Eff_Date'])
+	o.name = row["Acad_Org"]
+	row['Status'] == "I" ? o.status = false : o.status = true
+	o.description = row["Descr"]
+	o.short_description = row["Short_Desc"]
+	o.formal_description = row["FormalDesc"]
+
+	o.save
+	puts "#{o.description}, #{o.name} saved"
+end
+
