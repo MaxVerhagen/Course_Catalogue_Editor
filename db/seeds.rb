@@ -10,10 +10,11 @@ require 'csv'
 
 course_catalogue_data = File.read(Rails.root.join('lib', 'seeds', 'course_catalogue.csv'), encoding: 'ISO-8859-1')
 organisation_data = File.read(Rails.root.join('lib', 'seeds', 'organisation.csv'), encoding: 'ISO-8859-1')
-# course_offering_data = File.read(Rails.root.join('lib', 'seeds', 'course_offering.csv'), encoding: 'ISO-8859-1')
+course_offering_data = File.read(Rails.root.join('lib', 'seeds', 'course_offering.csv'), encoding: 'ISO-8859-1')
 
 course_catalogue_table = CSV.parse(course_catalogue_data, headers: true)
 organisation_table = CSV.parse(organisation_data, headers: true)
+course_offering_table = CSV.parse(course_offering_data, headers: true)
 
 course_catalogue_table.each do |row|
 	c = Course.new
@@ -47,3 +48,16 @@ organisation_table.each do |row|
 	puts "#{o.description}, #{o.name} saved"
 end
 
+course_offering_table.each do |row|
+	o. Offering.new
+	o.admin_course_id = row["Course_ID"].to_i
+	o.offering_number = row["Offer_Nbr"].to_i
+	o.subject = row["Subject"]
+	o.catalogue_num = row["Catalogue"]
+	o.campus = row["Campus"]
+	o.schedule_course = row["Schedule_Course"]
+	o.course = Course.find_by(admin_course_id: o.admin_course_id)
+
+	o.save
+	puts "#{o.subject}, #{o.admin_course_id}, #{o.offering_number} saved"
+end
