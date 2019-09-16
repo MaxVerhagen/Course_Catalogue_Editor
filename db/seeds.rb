@@ -11,10 +11,12 @@ require 'csv'
 course_catalogue_data = File.read(Rails.root.join('lib', 'seeds', 'course_catalogue.csv'), encoding: 'ISO-8859-1')
 organisation_data = File.read(Rails.root.join('lib', 'seeds', 'organisation.csv'), encoding: 'ISO-8859-1')
 course_offering_data = File.read(Rails.root.join('lib', 'seeds', 'course_offering.csv'), encoding: 'ISO-8859-1')
+ownership_data = File.read(Rails.root.join('lib', 'seeds', 'offering_ownership.csv'), encoding: 'ISO-8859-1')
 
 course_catalogue_table = CSV.parse(course_catalogue_data, headers: true)
 organisation_table = CSV.parse(organisation_data, headers: true)
 course_offering_table = CSV.parse(course_offering_data, headers: true)
+ownership_table = CSV.parse(ownership_data, headers: true)
 
 course_catalogue_table.each do |row|
 	c = Course.new
@@ -49,7 +51,7 @@ organisation_table.each do |row|
 end
 
 course_offering_table.each do |row|
-	o. Offering.new
+	o = Offering.new
 	o.admin_course_id = row["Course_ID"].to_i
 	o.offering_number = row["Offer_Nbr"].to_i
 	o.subject = row["Subject"]
@@ -60,4 +62,26 @@ course_offering_table.each do |row|
 
 	o.save
 	puts "#{o.subject}, #{o.admin_course_id}, #{o.offering_number} saved"
+end
+
+ownership_table.each do |row|
+	o = Offering.find_by(admin_course_id: row["Course_ID"], offering_number: row["Offer_Nbr"])
+	org = Organisation.find_by(name: row["Offering_Acad_Org"])
+
+	if Ownership.find_by(offering_id: o.id) != nil then
+		org = Organisation.find_by(name: row["Owner_Acad_Org"])
+	end
+
+	o.organisations << org
+
+	ow = Ownership.last()
+
+	if row["Pct_Owned"] != "" then
+		ow.percentage_owned = row["Pct_Owned"].to_i
+	else
+		ow.percentage_owned = 100
+	end
+
+	ow.save
+	puts "#{row['Course_ID']}, #{row['Offer_Nbr']}, #{ow.percentage_owned} saved"
 end
