@@ -1,18 +1,18 @@
-%h1 Listing courses
+%h1 Course List
 
-%table
+%table.table.table-hover
   %thead
     %tr
-      %th
-      %th
-      %th
+      %th Course ID
+      %th Title
+      %th 
 
   %tbody
     - @courses.each do |course|
       %tr
+        %td= course.admin_course_id
+        %td= course.long_title
         %td= link_to 'Show', course
-        %td= link_to 'Edit', edit_course_path(course)
-        %td= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
