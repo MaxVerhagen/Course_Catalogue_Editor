@@ -1,19 +1,23 @@
 %h1.display-3.text-center Course List
 
-%table.table.table-hover
-  %thead.thead-dark
-    %tr
-      %th Course ID
-      %th Title
-      %th 
+%div.container-fluid
+	%div.row
+		%div.col-1
+		%di.col-10
+			%table.table.table-hover
+				%thead.thead-dark
+					%tr
+						%th.text-center Course ID
+						%th.text-center Course Title
+						%th 
 
-  %tbody
-    - @courses.each do |course|
-      %tr
-        %td= course.admin_course_id
-        %td= course.long_title
-        %td= link_to 'Show', course
+				%tbody
+					- @courses.each do |course|
+						%tr
+							%td.text-center= course.admin_course_id
+							%td.text-center= course.long_title
+							%td.text-center= link_to 'Show', course
+		%div.col-1
 
-%br
-
-= raw pagy_bootstrap_nav_js(@pagy)
+	%div.row.justify-content-center
+		= raw pagy_bootstrap_nav_js(@pagy)
