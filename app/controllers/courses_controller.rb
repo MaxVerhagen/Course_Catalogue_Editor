@@ -1,10 +1,12 @@
 class CoursesController < ApplicationController
+	include Pagy::Backend
+
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
   # GET /courses
   # GET /courses.json
   def index
-    @courses = Course.all
+    @pagy, @courses = pagy(Course.all)
   end
 
   # GET /courses/1

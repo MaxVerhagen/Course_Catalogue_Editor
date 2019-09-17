@@ -1,4 +1,4 @@
-%h1.display-1 Course List
+%h1.display-3.text-center Course List
 
 %table.table.table-hover
   %thead.thead-dark
@@ -16,4 +16,4 @@
 
 %br
 
-= link_to 'New Course', new_course_path
+= raw pagy_bootstrap_nav_js(@pagy)
