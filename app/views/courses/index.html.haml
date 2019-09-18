@@ -6,8 +6,10 @@
 			%table.table.table-hover
 				%thead.thead-dark
 					%tr
-						%th.text-center Course ID
-						%th.text-center Course Title
+						%th.text-center
+							= table_heading_link("ida", "Course ID", courses_path)
+						%th.text-center
+							= table_heading_link("ta", "Course Title", courses_path)
 						%th 
 
 				%tbody

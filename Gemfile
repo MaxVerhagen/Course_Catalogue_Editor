@@ -98,6 +98,9 @@ end
 # Use bootstrap framework for css
 gem 'bootstrap', '~> 4.3.1'
 
+# Use amazing web fonts and stylesheets provided by Font Awesome
+gem "font-awesome-rails", '~> 4.7.0.5'
+
 # Fast and easy to use pagination gem
 gem 'pagy', '~> 3.5.1'
 
