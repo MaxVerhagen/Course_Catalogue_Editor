@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
 	include Pagy::Backend
-
+	
+	protect_from_forgery prepend: true
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
   # GET /courses
@@ -18,7 +19,12 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
-  end
+	end
+	
+	# POST /search
+	def search
+		
+	end
 
   # GET /courses/new
   def new

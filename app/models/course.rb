@@ -6,6 +6,11 @@ class Course < ApplicationRecord
 	end
 
 	def self.sorted(sort)
+		# ida = course id ascending order
+		# idd = course id descending order
+		# ta = course title ascending order
+		# td = course title descending order
+
 		if sort == "ida" then
 			order = :asc
 			key = :admin_course_id

@@ -1,8 +1,12 @@
 %h1.display-3.text-center Course List
 
 %div.container-fluid
+	%div.row
+		%div.col-9
+			= render "search_form"
+			
 	%div.row.justify-content-center
-		%di.col-9
+		%div.col-9
 			%table.table.table-hover
 				%thead.thead-dark
 					%tr

@@ -1,0 +1,12 @@
+= form_for :action, url: courses_search_path, method: :post do |f|
+	%div.form-group
+		%div.form-row.justify-content-center
+			%div.col-2
+				= f.text_field :course_id, class: "form-control", placeholder: "Course ID"
+			%div.col-6
+				= f.text_field :course_title, class: "form-control", placeholder: "Course Title"
+			%div.col-2-md.form-check.form-check-inline
+				= f.check_box :hide_inactive, class: "form-check-input"
+				= f.label "Hide Inactive", class: "form-check-label"
+			%div.action
+				= f.submit 'Search', class: "btn btn-primary"
