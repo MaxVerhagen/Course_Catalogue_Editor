@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
 	include Pagy::Backend
-	
+
 	protect_from_forgery prepend: true
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
@@ -23,7 +23,22 @@ class CoursesController < ApplicationController
 	
 	# POST /search
 	def search
-		
+		if params[:course][:hide_inactive] == "1" then
+			@pagy, @courses = pagy(Course.active_courses)
+		else
+			@pagy, @courses = pagy(Course.all)
+		end
+
+		course_id_query = params[:course][:course_id]
+		course_title_query = params[:course][:course_title]
+
+		if !course_id_query.empty? then
+			@pagy, @courses = pagy(@courses.where(admin_course_id: course_id_query))
+		elsif !course_title_query.empty? then
+			@pagy, @courses = pagy(@courses.where("long_title like ?", "#{course_title_query}%"))			
+		end
+
+		render :action => :index
 	end
 
   # GET /courses/new

@@ -5,6 +5,10 @@ class Course < ApplicationRecord
 		status
 	end
 
+	def self.active_courses
+		return Course.where(status: true)
+	end
+
 	def self.sorted(sort)
 		# ida = course id ascending order
 		# idd = course id descending order
