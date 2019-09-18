@@ -5,8 +5,14 @@ class CoursesController < ApplicationController
 
   # GET /courses
   # GET /courses.json
-  def index
-    @pagy, @courses = pagy(Course.all)
+	def index
+		if params.has_key? :sort then
+			@sort = params[:sort]
+		else
+			@sort = "ida"
+		end
+
+    @pagy, @courses = pagy(Course.sorted @sort)
   end
 
   # GET /courses/1

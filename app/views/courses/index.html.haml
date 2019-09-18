@@ -7,9 +7,9 @@
 				%thead.thead-dark
 					%tr
 						%th.text-center
-							= table_heading_link("ida", "Course ID", courses_path)
+							= table_heading_link(@sort, "Course ID")
 						%th.text-center
-							= table_heading_link("ta", "Course Title", courses_path)
+							= table_heading_link(@sort, "Course Title")
 						%th 
 
 				%tbody
