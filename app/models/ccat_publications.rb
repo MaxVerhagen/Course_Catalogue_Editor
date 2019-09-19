@@ -1,2 +1,0 @@
-class CcatPublication < PsoftDbBase
-end

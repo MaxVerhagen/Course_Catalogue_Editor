@@ -1,0 +1,92 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190915113249)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190915113249_create_courses.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "effective_date" date, "admin_course_id" integer, "status" boolean, "short_title" text, "long_title" text, "min_units" integer, "max_units" integer, "progress_units" float, "grading" varchar, "last_course" boolean, "enrollment_unit_calc" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190915113249_create_courses.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (90.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (98.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190915113249)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "effective_date" date, "admin_course_id" integer, "status" boolean, "short_title" text, "long_title" text, "min_units" integer, "max_units" integer, "progress_units" float, "grading" varchar, "last_course" boolean, "enrollment_unit_calc" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190915113249_create_courses.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190915113249"]]
+  ↳ bin/rails:9
+  [1m[35m (99.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOfferings (20190915113733)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "offerings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "admin_course_id" integer, "offering_number" integer, "subject" varchar, "catalogue_num" varchar, "campus" varchar, "schedule_course" varchar, "course_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_ce1e1d54d8"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  ↳ db/migrate/20190915113733_create_offerings.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_offerings_on_course_id" ON "offerings" ("course_id")[0m
+  ↳ db/migrate/20190915113733_create_offerings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190915113733"]]
+  ↳ bin/rails:9
+  [1m[35m (108.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrganisations (20190915114619)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "organisations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "effective_date" date, "name" varchar, "status" boolean, "description" text, "short_description" varchar, "formal_description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190915114619_create_organisations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190915114619"]]
+  ↳ bin/rails:9
+  [1m[35m (236.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOwnerships (20190915115027)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ownerships" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "percentage_owned" integer, "offering_id" integer, "organisation_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_cfaa8b5f27"
+FOREIGN KEY ("offering_id")
+  REFERENCES "offerings" ("id")
+, CONSTRAINT "fk_rails_d34da26a25"
+FOREIGN KEY ("organisation_id")
+  REFERENCES "organisations" ("id")
+)[0m
+  ↳ db/migrate/20190915115027_create_ownerships.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_ownerships_on_offering_id" ON "ownerships" ("offering_id")[0m
+  ↳ db/migrate/20190915115027_create_ownerships.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_ownerships_on_organisation_id" ON "ownerships" ("organisation_id")[0m
+  ↳ db/migrate/20190915115027_create_ownerships.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190915115027"]]
+  ↳ bin/rails:9
+  [1m[35m (95.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-15 11:54:29.403226"], ["updated_at", "2019-09-15 11:54:29.403226"]]
+  ↳ bin/rails:9
+  [1m[35m (61.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
