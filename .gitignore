@@ -1,3 +1,5 @@
 tmp/
 log/
 db/development.sqlite3
+db/test.sqlite3
+log/development.log

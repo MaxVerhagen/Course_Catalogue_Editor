@@ -1,0 +1,24 @@
+%h1.display-3.text-center Course List
+
+%div.container-fluid
+	%div.row.justify-content-center
+		%di.col-9
+			%table.table.table-hover
+				%thead.thead-dark
+					%tr
+						%th.text-center Course ID
+						%th.text-center Course Title
+						%th 
+
+				%tbody
+					- @courses.each do |course|
+						%tr{:class => ("table-warning" unless course.is_active?)}
+							%td.text-center= course.admin_course_id
+							%td.text-center= course.long_title
+							- if course.is_active?
+								%td.text-center= link_to 'Details', course
+							- else
+								%td
+
+	%div.row.justify-content-center
+		= raw pagy_bootstrap_nav_js(@pagy)
