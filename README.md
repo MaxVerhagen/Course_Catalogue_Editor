@@ -7,6 +7,7 @@
 * a1711582 - Luyang Wang
 * a1719719 - Elijah Hughes
 * a1720458 - Parthey Bhatt
+* a1724535 - Callum Martin
 
 ## Project Links
 
