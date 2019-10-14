@@ -1,4 +1,17 @@
-%p#notice= notice
+%h1.display-3.text-center Course Information
+
+%div.container-fluid
+    %table.table.table-hover
+        %thead.thead-dark
+            %tr
+                %th.text-center Course ID
+                %th.text-center Course Title
+                %th.text-center Course Description
+        %tbody
+            %tr
+                %td.text-center= @course.admin_course_id
+                %td.text-center= @course.long_title
+                %td.text-center= @course.description
 
 
 = link_to 'Edit', edit_course_path(@course)
