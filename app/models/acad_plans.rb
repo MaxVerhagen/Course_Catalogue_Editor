@@ -1,2 +1,0 @@
-class AcadPlan < PsoftDbBase
-end

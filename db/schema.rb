@@ -10,12 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_14_101606) do
+ActiveRecord::Schema.define(version: 2019_09_15_115027) do
 
-  create_table "widgets", force: :cascade do |t|
-    t.string "name"
+  create_table "courses", force: :cascade do |t|
+    t.date "effective_date"
+    t.integer "admin_course_id"
+    t.boolean "status"
+    t.text "short_title"
+    t.text "long_title"
+    t.integer "min_units"
+    t.integer "max_units"
+    t.float "progress_units"
+    t.string "grading"
+    t.boolean "last_course"
+    t.integer "enrollment_unit_calc"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "offerings", force: :cascade do |t|
+    t.integer "admin_course_id"
+    t.integer "offering_number"
+    t.string "subject"
+    t.string "catalogue_num"
+    t.string "campus"
+    t.string "schedule_course"
+    t.integer "course_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_offerings_on_course_id"
+  end
+
+  create_table "organisations", force: :cascade do |t|
+    t.date "effective_date"
+    t.string "name"
+    t.boolean "status"
+    t.text "description"
+    t.string "short_description"
+    t.text "formal_description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ownerships", force: :cascade do |t|
+    t.integer "percentage_owned"
+    t.integer "offering_id"
+    t.integer "organisation_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["offering_id"], name: "index_ownerships_on_offering_id"
+    t.index ["organisation_id"], name: "index_ownerships_on_organisation_id"
   end
 
 end
