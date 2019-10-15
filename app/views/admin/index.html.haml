@@ -1,0 +1,10 @@
+-if session[:type] == "Admin"
+    %h2.TitleTextv Welcome #{session[:user_name]}
+    %h2.TitleTextv ID #{session[:user_id]}
+    %h2.TitleTextv Type #{session[:type]}
+    
+    
+-if session[:type] == "Admin"
+    = link_to 'Log Out', admin_destroy_path, :class => 'subTextv'
+-else
+    = link_to 'Log_In', admin_login_path, :class => 'subTextv'

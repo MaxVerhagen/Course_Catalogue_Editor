@@ -18,6 +18,15 @@ organisation_table = CSV.parse(organisation_data, headers: true)
 course_offering_table = CSV.parse(course_offering_data, headers: true)
 ownership_table = CSV.parse(ownership_data, headers: true)
 
+admins = [
+		{:username => 'test1', :password => '123'},
+		{:username => 'test2', :password => '123'},
+		{:username => 'test3', :password => '123'}
+	]
+	admins.each do |attributes|
+        Admin.find_or_create_by! attributes
+    end
+
 course_catalogue_table.each do |row|
 	c = Course.new
 	c.effective_date = Date.parse(row['Eff_Date'])
