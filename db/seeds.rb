@@ -18,6 +18,15 @@ organisation_table = CSV.parse(organisation_data, headers: true)
 course_offering_table = CSV.parse(course_offering_data, headers: true)
 ownership_table = CSV.parse(ownership_data, headers: true)
 
+faculties = [
+		{:username => 'testf1', :password => '123'},
+		{:username => 'testf2', :password => '123'},
+		{:username => 'testf3', :password => '123'}
+	]
+	faculties.each do |attributes|
+        Admin.find_or_create_by! attributes
+    end
+
 admins = [
 		{:username => 'test1', :password => '123'},
 		{:username => 'test2', :password => '123'},
