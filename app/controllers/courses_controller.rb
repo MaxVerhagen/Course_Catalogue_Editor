@@ -35,21 +35,10 @@ class CoursesController < ApplicationController
 	
 	# POST /search
 	def search
-		if params[:course][:hide_inactive] == "1" then
-			@pagy, @courses = pagy(Course.active_courses)
-		else
-			@pagy, @courses = pagy(Course.all)
-		end
-
-		course_id_query = params[:course][:course_id]
-		course_title_query = params[:course][:course_title]
-
-		if !course_id_query.empty? then
+		if !params[:course][:course_id].empty? then
 			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], i: params[:course][:hide_inactive]
-			# @pagy, @courses = pagy(@courses.where(admin_course_id: course_id_query))
-		elsif !course_title_query.empty? then
+		elsif !params[:course][:course_title] then
 			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], i: params[:course][:hide_inactive]
-			# @pagy, @courses = pagy(@courses.where("long_title like ?", "#{course_title_query}%"))			
 		end
 	end
 
