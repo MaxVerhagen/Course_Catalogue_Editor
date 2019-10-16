@@ -9,11 +9,23 @@ class CoursesController < ApplicationController
 	def index
 		if params.has_key? :sort then
 			@sort = params[:sort]
+
+			@pagy, @courses = pagy(Course.sorted @sort)
 		else
 			@sort = "ida"
-		end
+			
+			if params[:i]== "1" then
+				@pagy, @courses = pagy(Course.active_courses)
+			else
+				@pagy, @courses = pagy(Course.all)
+			end
 
-    @pagy, @courses = pagy(Course.sorted @sort)
+			if params.key?(:qid) then
+				@pagy, @courses = pagy(@courses.where(admin_course_id: params[:qid]))
+			else
+				@pagy, @courses = pagy(@courses.where("long_title like ?", "#{params[:qt]}%"))
+			end
+		end
   end
 
   # GET /courses/1
@@ -33,10 +45,10 @@ class CoursesController < ApplicationController
 		course_title_query = params[:course][:course_title]
 
 		if !course_id_query.empty? then
-			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], hi: params[:course][:hide_inactive]
+			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], i: params[:course][:hide_inactive]
 			# @pagy, @courses = pagy(@courses.where(admin_course_id: course_id_query))
 		elsif !course_title_query.empty? then
-			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], hi: params[:course][:hide_inactive]
+			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], i: params[:course][:hide_inactive]
 			# @pagy, @courses = pagy(@courses.where("long_title like ?", "#{course_title_query}%"))			
 		end
 	end
