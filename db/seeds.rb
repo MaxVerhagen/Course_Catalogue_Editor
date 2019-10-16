@@ -24,7 +24,7 @@ faculties = [
 		{:username => 'testf3', :password => '123'}
 	]
 	faculties.each do |attributes|
-        Admin.find_or_create_by! attributes
+        Faculty.find_or_create_by! attributes
     end
 
 admins = [

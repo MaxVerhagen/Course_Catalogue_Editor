@@ -4,7 +4,9 @@
     %h2.TitleTextv Type #{session[:type]}
     
     
--if session[:type] == "Admin"
+-if session[:type] == "Faculty"
+    = link_to 'Log Out', faculty_destroy_path, :class => 'subTextv'
+-elsif session[:type] == "Admin"
     = link_to 'Log Out', admin_destroy_path, :class => 'subTextv'
 -else
     = link_to 'Log_In', admin_login_path, :class => 'subTextv'
