@@ -33,12 +33,12 @@ class CoursesController < ApplicationController
 		course_title_query = params[:course][:course_title]
 
 		if !course_id_query.empty? then
-			@pagy, @courses = pagy(@courses.where(admin_course_id: course_id_query))
+			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], hi: params[:course][:hide_inactive]
+			# @pagy, @courses = pagy(@courses.where(admin_course_id: course_id_query))
 		elsif !course_title_query.empty? then
-			@pagy, @courses = pagy(@courses.where("long_title like ?", "#{course_title_query}%"))			
+			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], hi: params[:course][:hide_inactive]
+			# @pagy, @courses = pagy(@courses.where("long_title like ?", "#{course_title_query}%"))			
 		end
-
-		render :action => :index
 	end
 
   # GET /courses/new
