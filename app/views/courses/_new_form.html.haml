@@ -1,0 +1,21 @@
+= form_for @course, :url => { :action => :create }  do |f|
+  %div.form-row
+    %div{class: "form-group col-md-5 ml-4"}
+      %div{class: "form-group col-md-5 ml-4"}
+        = f.label :short_title
+        = f.text_field :short_title, class: "form-control"
+      %div{class: "form-group col-md-5 ml-4"}
+        = f.label :long_title
+        = f.text_field :long_title, class: "form-control"
+
+  %div.form-row
+    %div{class: "form-group col-md-5 ml-4"}
+      = f.label :description
+      = f.text_area :description, class: "form-control", rows: "3"
+
+
+  %div{class: "actions w-50 p-3 form-row"}
+    %div.col-md-3
+      = f.submit 'Add', class: "btn btn-success btn-block"
+    %div.col-md-3
+      = link_to 'Back', courses_path, :class => "btn btn-danger btn-block"
