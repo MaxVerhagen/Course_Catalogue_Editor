@@ -1,4 +1,6 @@
 = form_for @course, url: @course, method: :put do |f|
+
+
     %div.form-row
         %div{class: "form-group col-md-5 ml-4"}
             = f.label :short_title
@@ -11,6 +13,12 @@
         %div{class: "form-group col-md-5 ml-4"}
             = f.label :description
             = f.text_area :description, class: "form-control", rows: "3"
+            
+    %div.form-row
+        %div{class: "form-group ml-4"}
+            = f.check_box :status, class: "form-control"
+        %div{class: "form-group ml-2"}
+            = f.label :active            
 
         
     %div.action

@@ -1,17 +1,25 @@
 = form_for @course, :url => { :action => :create }  do |f|
   %div.form-row
     %div{class: "form-group col-md-5 ml-4"}
-      %div{class: "form-group col-md-5 ml-4"}
-        = f.label :short_title
-        = f.text_field :short_title, class: "form-control"
-      %div{class: "form-group col-md-5 ml-4"}
-        = f.label :long_title
-        = f.text_field :long_title, class: "form-control"
+      = f.label :short_title
+      = f.text_field :short_title, class: "form-control"
+    %div{class: "form-group col-md-5 ml-4"}
+      = f.label :long_title
+      = f.text_field :long_title, class: "form-control"
+    %div{class: "form-group col-md-5 ml-4"}
+      = f.label :course_ID
+      = f.text_field :admin_course_id, class: "form-control"
 
   %div.form-row
     %div{class: "form-group col-md-5 ml-4"}
       = f.label :description
       = f.text_area :description, class: "form-control", rows: "3"
+      
+  %div.form-row
+    %div{class: "form-group ml-4"}
+      = f.check_box :status, class: "form-control"
+    %div{class: "form-group ml-2"}
+      = f.label :active             
 
 
   %div{class: "actions w-50 p-3 form-row"}
