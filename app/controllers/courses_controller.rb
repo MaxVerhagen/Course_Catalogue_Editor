@@ -1,18 +1,46 @@
 class CoursesController < ApplicationController
 	include Pagy::Backend
 
+	protect_from_forgery prepend: true
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
   # GET /courses
   # GET /courses.json
-  def index
-    @pagy, @courses = pagy(Course.all)
+	def index
+		if params.has_key? :sort then
+			@sort = params[:sort]
+
+			@pagy, @courses = pagy(Course.sorted @sort)
+		else
+			@sort = "ida"
+			
+			if params[:i]== "1" then
+				@pagy, @courses = pagy(Course.active_courses)
+			else
+				@pagy, @courses = pagy(Course.all)
+			end
+
+			if params.key?(:qid) then
+				@pagy, @courses = pagy(@courses.where(admin_course_id: params[:qid]))
+			else
+				@pagy, @courses = pagy(@courses.where("long_title like ?", "#{params[:qt]}%"))
+			end
+		end
   end
 
   # GET /courses/1
   # GET /courses/1.json
   def show
-  end
+	end
+	
+	# POST /search
+	def search
+		if !params[:course][:course_id].empty? then
+			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], i: params[:course][:hide_inactive]
+		elsif !params[:course][:course_title] then
+			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], i: params[:course][:hide_inactive]
+		end
+	end
 
   # GET /courses/new
   def new

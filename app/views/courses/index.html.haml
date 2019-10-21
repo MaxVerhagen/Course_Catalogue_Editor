@@ -2,12 +2,18 @@
 
 %div.container-fluid
 	%div.row.justify-content-center
-		%di.col-9
+		%div.col-9
+			= render "search_form"
+			
+	%div.row.justify-content-center
+		%div.col-9
 			%table.table.table-hover
 				%thead.thead-dark
 					%tr
-						%th.text-center Course ID
-						%th.text-center Course Title
+						%th.text-center
+							= table_heading_link(@sort, "Course ID")
+						%th.text-center
+							= table_heading_link(@sort, "Course Title")
 						%th 
 
 				%tbody
