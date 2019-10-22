@@ -1,5 +1,6 @@
 %h1.display-3.text-center Course List
 
+
 %div.container-fluid
 	%div.row.justify-content-center
 		%div.col-9
@@ -24,7 +25,14 @@
 							- if course.is_active?
 								%td.text-center= link_to 'Details', course
 							- else
-								%td
-
+								%td.text-center= link_to 'Edit', edit_course_path(course)
+								
+	%div.row.justify-content-center
+		= link_to 'New', new_course_path,  :class => 'btn btn-primary'
+		= link_to 'Refresh', courses_path,  :class => 'btn btn-secondary'
 	%div.row.justify-content-center
 		= raw pagy_bootstrap_nav_js(@pagy)
+		
+		
+		
+		
