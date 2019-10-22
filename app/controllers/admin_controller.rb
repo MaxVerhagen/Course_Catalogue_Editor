@@ -15,7 +15,7 @@ class AdminController < ApplicationController
         session[:user_name] = admin.username
         redirect_to admin_index_path
     else 
-         redirect_to admin_login_path, alert:"Incorrect Username or Password." 
+         redirect_to admin_login_path, alert:"" 
     end
   end
   
@@ -23,6 +23,6 @@ class AdminController < ApplicationController
       session[:type] = nil
       session[:user_id] = nil
       session[:user_name] = nil
-      redirect_to admin_index_path
+      redirect_to admin_login_path
   end
 end

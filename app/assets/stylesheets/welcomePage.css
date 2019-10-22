@@ -1,0 +1,127 @@
+/* @font-face {
+	font-family: 'Nunito';
+	src:font-url('Nunito-Regular.ttf') format('truetype');
+	font-family: 'Nunito';
+	src:font-url('Nunito-Bold.ttf') format('truetype');
+	} */
+
+#View_Page___3 {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1280px;
+	height: 799px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	--web-view-name: View Page – 3;
+	--web-view-id: View_Page___3;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_182 {
+	position: absolute;
+	overflow: visible;
+	width: 197px;
+	height: 67px;
+	left: 542px;
+	top: 606px;
+}
+#Group_3 {
+	position: absolute;
+	width: 197px;
+	height: 197px;
+	left: 542px;
+	top: 83px;
+	overflow: visible;
+}
+#Welcome__Alexander_ {
+	position: absolute;
+	left: 507px;
+	top: 300px;
+	overflow: hidden;
+	width: 267px;
+	height: 42px;
+	text-align: center;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 30px;
+	color: rgba(76,76,76,1);
+}
+#Access_your_cources__edit_them {
+	position: absolute;
+	left: 458px;
+	top: 441px;
+	overflow: hidden;
+	width: 366px;
+	height: 83px;
+	line-height: 24px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 20px;
+	color: rgba(76,76,76,1);
+}
+#ID__20__Type__Admin {
+	position: absolute;
+	left: 506px;
+	top: 362px;
+	overflow: hidden;
+	width: 270px;
+	height: 62px;
+	line-height: 24px;
+	margin-top: -3px;
+	text-align: center;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(76,76,76,1);
+}
+#Sign_out {
+	position: absolute;
+	left: 558px;
+	top: 625px;
+	overflow: hidden;
+	width: 163px;
+	height: 25px;
+	line-height: 24px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_181 {
+	position: absolute;
+	overflow: visible;
+	width: 291px;
+	height: 67px;
+	left: 495px;
+	top: 529px;
+}
+#Got_to_courses {
+	position: absolute;
+	left: 513px;
+	top: 549px;
+	overflow: hidden;
+	width: 256px;
+	height: 28px;
+	line-height: 24px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+
+.subTextv{
+	color: white;
+}
