@@ -15,7 +15,7 @@
   %body
     #View_Page___1
       #COMPUTER_SYSTEMS_UG
-        %span COMPUTER SYSTEMS UG
+        %span= @course.long_title
       #Total_Earnings
         %svg.BG
           %rect#BG{:fill => "rgba(255,255,255,1)", :height => "133", :rx => "0", :ry => "0", :width => "370", :x => "0", :y => "0"}
@@ -36,7 +36,7 @@
         #Computer_Systems
           %span Computer Systems
         #Long_Course_Title
-          %span Long Course Title
+          %span= @course.long_title
       #Total_Views_A23_Group_4
         %svg.BG_A23_Rectangle_4
           %rect#BG_A23_Rectangle_4{:fill => "rgba(255,255,255,1)", :height => "345", :rx => "0", :ry => "0", :width => "1170", :x => "0", :y => "0"}
