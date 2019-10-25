@@ -1,26 +1,535 @@
-= form_for @course, url: @course, method: :put do |f|
+-# = form_for @course, url: @course, method: :put do |f|
 
 
-    %div.form-row
-        %div{class: "form-group col-md-5 ml-4"}
-            = f.label :short_title
-            = f.text_field :short_title, class: "form-control"
-        %div{class: "form-group col-md-5 ml-4"}
-            = f.label :long_title
-            = f.text_field :long_title, class: "form-control"
+-#     %div.form-row
+-#         %div{class: "form-group col-md-5 ml-4"}
+-#             = f.label :short_title
+-#             = f.text_field :short_title, class: "form-control"
+-#         %div{class: "form-group col-md-5 ml-4"}
+-#             = f.label :long_title
+-#             = f.text_field :long_title, class: "form-control"
     
-    %div.form-row
-        %div{class: "form-group col-md-5 ml-4"}
-            = f.label :description
-            = f.text_area :description, class: "form-control", rows: "3"
+-#     %div.form-row
+-#         %div{class: "form-group col-md-5 ml-4"}
+-#             = f.label :description
+-#             = f.text_area :description, class: "form-control", rows: "3"
             
-    %div.form-row
-        %div{class: "form-group ml-4"}
-            = f.check_box :status, class: "form-control"
-        %div{class: "form-group ml-2"}
-            = f.label :active            
+-#     %div.form-row
+-#         %div{class: "form-group ml-4"}
+-#             = f.check_box :status, class: "form-control"
+-#         %div{class: "form-group ml-2"}
+-#             = f.label :active            
 
         
-    %div.action
-        = f.submit 'Update', class: "btn btn-warning col-md-3 ml-4", data: { confirm: 'Are you sure?' }
-        = link_to 'Back', @course,  :class => 'btn btn-secondary col-md-3 ml-4'
+-#     %div.action
+-#         = f.submit 'Update', class: "btn btn-warning col-md-3 ml-4", data: { confirm: 'Are you sure?' }
+-#         = link_to 'Back', @course,  :class => 'btn btn-secondary col-md-3 ml-4'
+
+
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Edit Page
+    %link#applicationStylesheet{:href => "/assets/edit_page.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
+  %body
+  = form_for @course, url: @course, method: :put do |f|
+    #Edit_Page
+      #Total_Views
+        %svg.BG
+          %rect#BG{:fill => "rgba(255,255,255,1)", :height => "351", :rx => "0", :ry => "0", :width => "443", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_2
+        %svg.BG_A26_Rectangle_2
+          %rect#BG_A26_Rectangle_2{:fill => "rgba(255,255,255,1)", :height => "1404", :rx => "0", :ry => "0", :width => "666", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_3
+        %svg.BG_A26_Rectangle_3
+          %rect#BG_A26_Rectangle_3{:fill => "rgba(255,255,255,1)", :height => "1216", :rx => "0", :ry => "0", :width => "666", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_4
+        %svg.BG_A26_Rectangle_4
+          %rect#BG_A26_Rectangle_4{:fill => "rgba(255,255,255,1)", :height => "1220", :rx => "0", :ry => "0", :width => "666", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_5
+        %svg.BG_A26_Rectangle_5
+          %rect#BG_A26_Rectangle_5{:fill => "rgba(255,255,255,1)", :height => "434", :rx => "0", :ry => "0", :width => "443", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_6
+        %svg.BG_A26_Rectangle_6
+          %rect#BG_A26_Rectangle_6{:fill => "rgba(255,255,255,1)", :height => "207", :rx => "0", :ry => "0", :width => "1156", :x => "0", :y => "0"}
+      #Total_Views_A26_Group_7
+        %svg.BG_A26_Rectangle_7
+          %rect#BG_A26_Rectangle_7{:fill => "rgba(255,255,255,1)", :height => "508", :rx => "0", :ry => "0", :width => "443", :x => "0", :y => "0"}
+      #Head
+        #Course_Units
+          %span Course Units
+      #Head_A26_Group_9
+        #Scheduling
+          %span Scheduling
+      #Head_A26_Group_10
+        #Honours_Count_Grading
+          %span Honours/Count/Grading
+      #Head_A26_Group_11
+        #Components
+          %span Components
+      #Head_A26_Group_12
+        #Offerings
+          %span Offerings
+      #COMPUTER_SYSTEMS_UG
+        %span= @course.long_title
+      #Edit
+        %span Edit
+      %svg.Line_15
+        %path#Line_15{:d => "M 0 0 L 19 0", :fill => "transparent", "shape-rendering" => "auto", :stroke => "rgba(180,28,96,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "3px"}
+      #Alexander
+        %span Alexander
+      #Admin
+        %span Admin
+      #Group_245
+        %svg{:style => "width:inherit;height:inherit;overflow:visible;"}
+          %rect{:fill => "url(#Group_245_A26_Group_87_pattern)", :height => "100%", :width => "100%"}
+          %pattern#Group_245_A26_Group_87_pattern{:elementid => "Group_245_A26_Group_87", :height => "100%", :width => "100%", :x => "0", :y => "0"}
+            %image{:height => "100%", :href => "/images/Group_245_A26_Group_87_pattern.png", :width => "100%", :x => "0", "xlink:href" => "Group_245_A26_Group_87_pattern.png", :y => "0"}
+      #Press_label
+        = f.text_field :short_title, :type => "text", :id =>"Computer_Systems"
+        #Short_Title
+          %span Short Title
+        %svg.Path_297{:viewbox => "-835.08 2509.809 320.99 3"}
+          %path#Path_297{:d => "M -835.0799560546875 2509.80859375 C -835.0799560546875 2509.80859375 -514.08984375 2509.80859375 -514.08984375 2509.80859375", :fill => "transparent", "shape-rendering" => "auto", :stroke => "rgba(248,113,145,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "3px"}
+      #Press_label_A26_Group_16
+        = f.text_field :admin_course_id, :type => "text", :id =>"ID023992"
+        #Course_ID
+          %span Course ID
+        %svg.Path_297_A26_Path_4{:viewbox => "-835.08 2509.809 320.99 3"}
+          %path#Path_297_A26_Path_4{:d => "M -835.0799560546875 2509.80859375 C -835.0799560546875 2509.80859375 -514.08984375 2509.80859375 -514.08984375 2509.80859375", :fill => "transparent", "shape-rendering" => "auto", :stroke => "rgba(52,159,198,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "3px"}
+      #Press_label_A26_Group_17
+        = f.text_field :long_title, :type => "text", :id =>"ID023992"
+        #Long_Title
+          %span Long Title
+        %svg.Path_297_A26_Path_5{:viewbox => "-835.08 2509.809 320.99 3"}
+          %path#Path_297_A26_Path_5{:d => "M -835.0799560546875 2509.80859375 C -835.0799560546875 2509.80859375 -514.08984375 2509.80859375 -514.08984375 2509.80859375", :fill => "transparent", "shape-rendering" => "auto", :stroke => "rgba(120,70,194,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "3px"}
+      #Focus_label
+        %svg.Rectangle_175
+          %rect#Rectangle_175{:fill => "rgba(255,255,255,1)", :height => "263", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(108,164,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "722", :x => "0", :y => "0"}
+      #Course_Description
+        %span Course Description
+      #Date_Started
+        %span Date Started
+      .Image_21
+        %input#picker.form-control{:type => "date"}/
+      #Press_label_A26_Group_19
+        %svg.Rectangle_175_A26_Rectangle_13
+          %rect#Rectangle_175_A26_Rectangle_13{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder{:placeholder => @course.min_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Minimum_Units
+          %span Minimum Units
+      #Press_label_A26_Group_20
+        %svg.Rectangle_175_A26_Rectangle_14
+          %rect#Rectangle_175_A26_Rectangle_14{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_20{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Last_Course_of_Mult_Term_Seque
+          %span Last Course of Mult Term Sequence
+      #Press_label_A26_Group_21
+        %svg.Rectangle_175_A26_Rectangle_15
+          %rect#Rectangle_175_A26_Rectangle_15{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_22{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Offering_Number
+          %span Offering Number
+      #Press_label_A26_Group_22
+        %svg.Rectangle_175_A26_Rectangle_16
+          %rect#Rectangle_175_A26_Rectangle_16{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_24{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Maximum_Units
+          %span Maximum Units
+      #Press_label_A26_Group_23
+        %svg.Rectangle_175_A26_Rectangle_17
+          %rect#Rectangle_175_A26_Rectangle_17{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %select#Placeholder_A26_Text_26{:placeholder => @course.max_units, :style => "left:10px;border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149);background-color: white", :type => "text"}
+          %option{:value => "Actual Units"} Actual Units
+          %option{:value => "Not Actual"} Not Actual
+        #Enrolment_Unit_Load_Type
+          %span Enrolment Unit Load Type
+      #Press_label_A26_Group_24
+        %svg.Rectangle_175_A26_Rectangle_18
+          %rect#Rectangle_175_A26_Rectangle_18{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "329", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_28{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 310px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Primary_Component
+          %span Primary Component
+      #Press_label_A26_Group_25
+        %svg.Rectangle_175_A26_Rectangle_19
+          %rect#Rectangle_175_A26_Rectangle_19{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "329", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_30{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 310px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Component
+          %span Component
+      #Press_label_A26_Group_26
+        %svg.Rectangle_175_A26_Rectangle_20
+          %rect#Rectangle_175_A26_Rectangle_20{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "329", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_32{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 310px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Splus_Templates_Required
+          %span Splus Templates Required
+      #Press_label_A26_Group_27
+        %svg.Rectangle_175_A26_Rectangle_21
+          %rect#Rectangle_175_A26_Rectangle_21{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "329", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_34{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 310px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Selection_Size
+          %span Selection Size
+      #Press_label_A26_Group_28
+        %svg.Rectangle_175_A26_Rectangle_22
+          %rect#Rectangle_175_A26_Rectangle_22{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "329", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_36{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 310px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Contact_Hours
+          %span Contact Hours
+      #Press_label_A26_Group_29
+        %svg.Rectangle_175_A26_Rectangle_23
+          %rect#Rectangle_175_A26_Rectangle_23{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %select#Placeholder_A26_Text_38{:placeholder => "3.00", :style => "left:10px;border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149);background-color: white", :type => "text"}
+          %option{:value => "true"} Active
+          %option{:value => "false"} Inactive
+        #Schedule_Course
+          %span Schedule Course
+      #Press_label_A26_Group_30
+        %svg.Rectangle_175_A26_Rectangle_24
+          %rect#Rectangle_175_A26_Rectangle_24{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_40{:placeholder => @course.progress_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Academic_Progress_Units
+          %span Academic Progress Units
+      #Press_label_A26_Group_31
+        %svg.Rectangle_175_A26_Rectangle_25
+          %rect#Rectangle_175_A26_Rectangle_25{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_42{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Course_Count
+          %span Course Count
+      #Press_label_A26_Group_32
+        %svg.Rectangle_175_A26_Rectangle_26
+          %rect#Rectangle_175_A26_Rectangle_26{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_44{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Catalog_Number
+          %span Catalog Number
+      #Press_label_A26_Group_33
+        %svg.Rectangle_175_A26_Rectangle_27
+          %rect#Rectangle_175_A26_Rectangle_27{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_46{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Financial_Aid_Progress_Units
+          %span Financial Aid Progress Units
+      #Press_label_A26_Group_34
+        %svg.Rectangle_175_A26_Rectangle_28
+          %rect#Rectangle_175_A26_Rectangle_28{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_48{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Course_Contact_Hours
+          %span Course Contact Hours
+      #Press_label_A26_Group_35
+        %svg.Rectangle_175_A26_Rectangle_29
+          %rect#Rectangle_175_A26_Rectangle_29{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_50{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Subject
+          %span Subject
+      #Press_label_A26_Group_36
+        %svg.Rectangle_175_A26_Rectangle_30
+          %rect#Rectangle_175_A26_Rectangle_30{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %select#Placeholder_A26_Text_52{:placeholder => "3.00", :style => "left:10px;border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149);background-color: white", :type => "text"}
+          %option{:value => "M80"} M80
+          %option{:value => "M10-CWMS"} M10-CWMS
+        #Grading_Basis
+          %span Grading Basis
+      #Press_label_A26_Group_37
+        %svg.Rectangle_175_A26_Rectangle_31
+          %rect#Rectangle_175_A26_Rectangle_31{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_54{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Campus
+          %span Campus
+      #Press_label_A26_Group_38
+        %svg.Rectangle_175_A26_Rectangle_32
+          %rect#Rectangle_175_A26_Rectangle_32{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
+        %input#Placeholder_A26_Text_56{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        #Academic_Organisation
+          %span Academic Organisation
+      #Row_4
+        %svg.Divider
+          %rect#Divider{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG
+          %rect#Row_BG{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323
+          %span 232323
+        #Product_Title
+          %span Semester 2
+      #Row_4_A26_Group_43
+        %svg.Divider_A26_Rectangle_35
+          %rect#Divider_A26_Rectangle_35{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_36
+          %rect#Row_BG_A26_Rectangle_36{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_60
+          %span 232323
+        #Product_Title_A26_Text_61
+          %span Trimester 1
+      #Row_4_A26_Group_44
+        %svg.Divider_A26_Rectangle_37
+          %rect#Divider_A26_Rectangle_37{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_38
+          %rect#Row_BG_A26_Rectangle_38{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_62
+          %span 232323
+        #Product_Title_A26_Text_63
+          %span Trimester 2
+      #Row_4_A26_Group_45
+        %svg.Divider_A26_Rectangle_39
+          %rect#Divider_A26_Rectangle_39{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_40
+          %rect#Row_BG_A26_Rectangle_40{:fill => "rgba(255,255,255,1)", :height => "90", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_64
+          %span 232323
+        #Product_Title_A26_Text_65
+          %span Trimester 3
+      #Row_4_A26_Group_46
+        %svg.Divider_A26_Rectangle_41
+          %rect#Divider_A26_Rectangle_41{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_42
+          %rect#Row_BG_A26_Rectangle_42{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_66
+          %span 232323
+        #Product_Title_A26_Text_67
+          %span PCE 1
+      #Row_4_A26_Group_47
+        %svg.Divider_A26_Rectangle_43
+          %rect#Divider_A26_Rectangle_43{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_44
+          %rect#Row_BG_A26_Rectangle_44{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_68
+          %span 232323
+        #Product_Title_A26_Text_69
+          %span PCE 2
+      #Row_4_A26_Group_48
+        %svg.Divider_A26_Rectangle_45
+          %rect#Divider_A26_Rectangle_45{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_46
+          %rect#Row_BG_A26_Rectangle_46{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_70
+          %span 232323
+        #Product_Title_A26_Text_71
+          %span PCE 3
+      #Row_4_A26_Group_49
+        %svg.Divider_A26_Rectangle_47
+          %rect#Divider_A26_Rectangle_47{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_48
+          %rect#Row_BG_A26_Rectangle_48{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_72
+          %span 232323
+        #Product_Title_A26_Text_73
+          %span Quadmester 1
+      #Row_4_A26_Group_50
+        %svg.Divider_A26_Rectangle_49
+          %rect#Divider_A26_Rectangle_49{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_50
+          %rect#Row_BG_A26_Rectangle_50{:fill => "rgba(255,255,255,1)", :height => "90", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_74
+          %span 232323
+        #Product_Title_A26_Text_75
+          %span Quadmester 2
+      #Row_4_A26_Group_51
+        %svg.Divider_A26_Rectangle_51
+          %rect#Divider_A26_Rectangle_51{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_52
+          %rect#Row_BG_A26_Rectangle_52{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_76
+          %span 232323
+        #Product_Title_A26_Text_77
+          %span Quadmester 3
+      #Row_4_A26_Group_52
+        %svg.Row_BG_A26_Rectangle_53
+          %rect#Row_BG_A26_Rectangle_53{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_78
+          %span 232323
+        #Product_Title_A26_Text_79
+          %span Quadmester 4
+      #Row_3
+        %svg.Divider_A26_Rectangle_54
+          %rect#Divider_A26_Rectangle_54{:fill => "rgba(241,241,243,1)", :height => "2", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_55
+          %rect#Row_BG_A26_Rectangle_55{:fill => "rgba(255,255,255,1)", :height => "92", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_80
+          %span 232323
+        #Product_Title_A26_Text_81
+          %span Winter Semester
+      #Row_2
+        %svg.Divider_A26_Rectangle_56
+          %rect#Divider_A26_Rectangle_56{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_57
+          %rect#Row_BG_A26_Rectangle_57{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID232323_A26_Text_82
+          %span 232323
+        #Product_Title_A26_Text_83
+          %span Semester 1
+      #Row_1
+        %svg.Divider_A26_Rectangle_58
+          %rect#Divider_A26_Rectangle_58{:fill => "rgba(241,241,243,1)", :height => "1", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        %svg.Row_BG_A26_Rectangle_59
+          %rect#Row_BG_A26_Rectangle_59{:fill => "rgba(255,255,255,1)", :height => "91", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #ID234554
+          %span 234554
+        #Product_Title_A26_Text_85
+          %span Summer Semester
+        #Icon
+          %svg.Icon_BG_A26_Ellipse_3
+            %ellipse#Icon_BG_A26_Ellipse_3{:cx => "18.5", :cy => "19.5", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "19.5"}
+          %svg.New_customer_Icon_A26_BooleanGroup_2{:viewbox => "0 0 16 16"}
+            %path#New_customer_Icon_A26_BooleanGroup_2{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Head_A26_Group_57
+        %svg.Head_BG
+          %rect#Head_BG{:fill => "rgba(245,246,250,1)", :height => "59", :rx => "0", :ry => "0", :width => "622", :x => "0", :y => "0"}
+        #Active
+          %span Active
+        #Course_ID_A26_Text_87
+          %span Course ID
+        #Course
+          %span Course
+      #check_box_24px
+        %svg.Path_3{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_59
+        %svg.Path_3_A26_Path_14{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_14{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_15{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_15{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_60
+        %svg.Path_3_A26_Path_16{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_16{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_17{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_17{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_61
+        %svg.Path_3_A26_Path_18{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_18{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_19{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_19{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_62
+        %svg.Path_3_A26_Path_20{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_20{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_21{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_21{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_63
+        %svg.Path_3_A26_Path_22{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_22{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_23{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_23{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_64
+        %svg.Path_3_A26_Path_24{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_24{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_25{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_25{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_65
+        %svg.Path_3_A26_Path_26{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_26{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_27{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_27{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_66
+        %svg.Path_3_A26_Path_28{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_28{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_29{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_29{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_67
+        %svg.Path_3_A26_Path_30{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_30{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_31{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_31{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_68
+        %svg.Path_3_A26_Path_32{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_32{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_33{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_33{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_69
+        %svg.Path_3_A26_Path_34{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_34{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_35{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_35{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_70
+        %svg.Path_3_A26_Path_36{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_36{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_37{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_37{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #check_box_24px_A26_Group_71
+        %svg.Path_3_A26_Path_38{:viewbox => "0 0 20.996 20.996"}
+          %path#Path_3_A26_Path_38{:d => "M 0 0 L 20.99631118774414 0 L 20.99631118774414 20.99631118774414 L 0 20.99631118774414 L 0 0 Z", :fill => "transparent"}
+        %svg.Path_4_A26_Path_39{:viewbox => "3 3 15.747 15.747"}
+          %path#Path_4_A26_Path_39{:d => "M 16.9975414276123 3.000000476837158 L 4.749693393707275 3.000000476837158 C 3.778613805770874 3.000000476837158 3.000000476837158 3.787362575531006 3.000000476837158 4.749693393707275 L 3.000000476837158 16.9975414276123 C 3.000000476837158 17.95987510681152 3.778613805770874 18.74723434448242 4.749693393707275 18.74723434448242 L 16.9975414276123 18.74723434448242 C 17.96862030029297 18.74723434448242 18.74723434448242 17.95987510681152 18.74723434448242 16.9975414276123 L 18.74723434448242 4.749693393707275 C 18.74723434448242 3.787362575531006 17.96862030029297 3.000000476837158 16.9975414276123 3.000000476837158 Z M 9.12392520904541 15.2478494644165 L 4.749693393707275 10.87361621856689 L 5.983226299285889 9.640084266662598 L 9.12392520904541 12.77203273773193 L 15.76400756835938 6.131949901580811 L 16.9975414276123 7.374231815338135 L 9.12392520904541 15.2478494644165 Z", :fill => "rgba(112,112,112,1)"}
+      #Icon_A26_Group_72
+        %svg.Icon_BG_A26_Ellipse_3
+          %ellipse#Icon_BG_A26_Ellipse_3{:cx => "18.5", :cy => "19.5", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "19.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_2{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_2{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Icon_A26_Group_73
+        %svg.Icon_BG_A26_Ellipse_4
+          %ellipse#Icon_BG_A26_Ellipse_4{:cx => "18.5", :cy => "18.5", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_3{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_3{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Icon_A26_Group_74
+        %svg.Icon_BG_A26_Ellipse_5
+          %ellipse#Icon_BG_A26_Ellipse_5{:cx => "18.5", :cy => "19", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_4{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_4{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Icon_A26_Group_75
+        %svg.Icon_BG_A26_Ellipse_6
+          %ellipse#Icon_BG_A26_Ellipse_6{:cx => "18.5", :cy => "18.5", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_5{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_5{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Icon_A26_Group_77
+        %svg.Icon_BG_A26_Ellipse_7
+          %ellipse#Icon_BG_A26_Ellipse_7{:cx => "18.5", :cy => "18.5", :fill => "rgba(232,231,255,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_6{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_6{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(130,128,255,1)"}
+      #Icon_A26_Group_77
+        %svg.Icon_BG_A26_Ellipse_8
+          %ellipse#Icon_BG_A26_Ellipse_8{:cx => "18.5", :cy => "18.5", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_7{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_7{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_78
+        %svg.Icon_BG_A26_Ellipse_9
+          %ellipse#Icon_BG_A26_Ellipse_9{:cx => "18.5", :cy => "19", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_8{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_8{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_79
+        %svg.Icon_BG_A26_Ellipse_10
+          %ellipse#Icon_BG_A26_Ellipse_10{:cx => "18.5", :cy => "19", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_9{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_9{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_80
+        %svg.Icon_BG_A26_Ellipse_11
+          %ellipse#Icon_BG_A26_Ellipse_11{:cx => "18.5", :cy => "19.5", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "19.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_10{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_10{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_81
+        %svg.Icon_BG_A26_Ellipse_12
+          %ellipse#Icon_BG_A26_Ellipse_12{:cx => "18.5", :cy => "18.5", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_11{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_11{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_82
+        %svg.Icon_BG_A26_Ellipse_13
+          %ellipse#Icon_BG_A26_Ellipse_13{:cx => "18.5", :cy => "19", :fill => "rgba(255,231,231,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_12{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_12{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(255,128,128,1)"}
+      #Icon_A26_Group_83
+        %svg.Icon_BG_A26_Ellipse_14
+          %ellipse#Icon_BG_A26_Ellipse_14{:cx => "18.5", :cy => "18.5", :fill => "rgba(210,180,253,1)", :rx => "18.5", :ry => "18.5"}
+        %svg.New_customer_Icon_A26_BooleanGroup_13{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_13{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(120,70,194,1)"}
+      #Icon_A26_Group_84
+        %svg.Icon_BG_A26_Ellipse_15
+          %ellipse#Icon_BG_A26_Ellipse_15{:cx => "18.5", :cy => "19", :fill => "rgba(210,180,253,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_14{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_14{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(120,70,194,1)"}
+      #Icon_A26_Group_85
+        %svg.Icon_BG_A26_Ellipse_16
+          %ellipse#Icon_BG_A26_Ellipse_16{:cx => "18.5", :cy => "19", :fill => "rgba(210,180,253,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_15{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_15{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(120,70,194,1)"}
+      #Icon_A26_Group_86
+        %svg.Icon_BG_A26_Ellipse_17
+          %ellipse#Icon_BG_A26_Ellipse_17{:cx => "18.5", :cy => "19", :fill => "rgba(210,180,253,1)", :rx => "18.5", :ry => "19"}
+        %svg.New_customer_Icon_A26_BooleanGroup_16{:viewbox => "0 0 16 16"}
+          %path#New_customer_Icon_A26_BooleanGroup_16{:d => "M 12.00097751617432 16 L 12.00097751617432 13.99963474273682 L 10.00048923492432 13.99963474273682 L 10.00048923492432 12.00085544586182 L 12.00097751617432 12.00085544586182 L 12.00097751617432 10.00048923492432 L 14.00146579742432 10.00048923492432 L 14.00146579742432 12.00085544586182 L 16 12.00085544586182 L 16 13.99963474273682 L 14.00146579742432 13.99963474273682 L 14.00146579742432 16 L 12.00097751617432 16 Z M 0 16 L 0 15.00061130523682 C 0 12.19970798492432 2.20068359375 10.00048923492432 5.000488758087158 10.00048923492432 L 8 10.00048923492432 L 8 12.00085544586182 L 5.000488758087158 12.00085544586182 C 3.699707269668579 12.00085544586182 2.600097894668579 12.79968357086182 2.20068359375 13.99963474273682 L 8 13.99963474273682 L 8 16 L 0 16 Z M 2.999511957168579 5.000244617462158 L 2.999511957168579 3.999023675918579 C 2.999511957168579 1.79980480670929 4.799316883087158 0 7.000977039337158 0 C 9.199707984924316 0 10.99951267242432 1.79980480670929 10.99951267242432 3.999023675918579 L 10.99951267242432 5.000244617462158 C 10.99951267242432 7.199463367462158 9.199707984924316 8.999267578125 7.000977039337158 8.999267578125 C 4.799316883087158 8.999267578125 2.999511957168579 7.199463367462158 2.999511957168579 5.000244617462158 Z M 5.000488758087158 3.999023675918579 L 5.000488758087158 5.000244617462158 C 5.000488758087158 6.099853992462158 5.901367664337158 7.000610828399658 7.000977039337158 7.000610828399658 C 8.10009765625 7.000610828399658 9.0009765625 6.099853992462158 9.0009765625 5.000244617462158 L 9.0009765625 3.999023675918579 C 9.0009765625 2.899536371231079 8.10009765625 2.00048828125 7.000977039337158 2.00048828125 C 5.901367664337158 2.00048828125 5.000488758087158 2.899536371231079 5.000488758087158 3.999023675918579 Z", :fill => "rgba(120,70,194,1)"}
+      = f.text_area :description, class: "form-control", rows: "3", :id =>"This_course_introduces_the_ele"
+      %div.action
+        = f.submit 'Update', class: "btn btn-warning col-md-3 ml-4", data: { confirm: 'Are you sure?' },id: "Submit_box"
+        = link_to 'Back', @course,  :class => 'btn btn-secondary col-md-3 ml-4', id:"Back_Box"
+
+    %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
