@@ -20,23 +20,23 @@
         %svg.BG
           %rect#BG{:fill => "rgba(255,255,255,1)", :height => "133", :rx => "0", :ry => "0", :width => "370", :x => "0", :y => "0"}
         #ID29_02_2020
-          %span 29/02/2020
+          %span= @course.effective_date
         #Date_Started
           %span Date Started
       #Total_Sales
         %svg.BG_A23_Rectangle_2
           %rect#BG_A23_Rectangle_2{:fill => "rgba(255,255,255,1)", :height => "133", :rx => "0", :ry => "0", :width => "370", :x => "0", :y => "0"}
         #ID0283823
-          %span 0283823
+          %span= @course.admin_course_id
         #Course_ID
           %span Course ID
       #Total_Views
         %svg.BG_A23_Rectangle_3
           %rect#BG_A23_Rectangle_3{:fill => "rgba(255,255,255,1)", :height => "133", :rx => "0", :ry => "0", :width => "370", :x => "0", :y => "0"}
         #Computer_Systems
-          %span Computer Systems
-        #Long_Course_Title
           %span= @course.long_title
+        #Long_Course_Title
+          %span Long Course Title
       #Total_Views_A23_Group_4
         %svg.BG_A23_Rectangle_4
           %rect#BG_A23_Rectangle_4{:fill => "rgba(255,255,255,1)", :height => "345", :rx => "0", :ry => "0", :width => "1170", :x => "0", :y => "0"}
@@ -53,7 +53,7 @@
         %span Course Description
       #This_course_introduces_the_ele
         %span
-          This course introduces the elements of computer systems from the level of basic hardware gates, through to compilers, languages and applications. The aim is to give an overview of the layered nature of computer systems and how the use of simple interfaces can make the design of complex and powerful systems possible.
+          = @course.description
           %br/
           = succeed "Topics covered include: digital logic, memory, processors, assembly language, virtual machines, recursive descent parsing, code generation and operating systems." do
             %br/
