@@ -21,7 +21,7 @@
 	left: 55px;
 	top: 66px;
 	overflow: hidden;
-	width: 371px;
+	width: 571px;
 	height: 41px;
 	text-align: left;
 	font-family: Nunito;
@@ -155,9 +155,9 @@
 	position: absolute;
 	left: 20px;
 	top: 64px;
-	overflow: visible;
-	width: 210px;
-	white-space: nowrap;
+	overflow: hidden;
+	width: 310px;
+	white-space: normal;
 	text-align: left;
 	font-family: Source Sans Pro;
 	font-style: normal;
@@ -275,7 +275,7 @@
 	position: absolute;
 	left: 90px;
 	top: 465px;
-	overflow: hidden;
+	overflow-y: scroll;
 	width: 1110px;
 	height: 219px;
 	text-align: left;
