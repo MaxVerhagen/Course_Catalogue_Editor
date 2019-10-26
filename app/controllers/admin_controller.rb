@@ -8,11 +8,11 @@ class AdminController < ApplicationController
   end
     
   def takecredentials
-    admin = Admin.find_by username: params[:username]
-    if admin && (admin.password == params[:password] )
+    @admin = Admin.find_by username: params[:username]
+    if @admin && (@admin.password == params[:password] )
         session[:type] = "Admin"
-        session[:user_id] = admin.id
-        session[:user_name] = admin.username
+        session[:user_id] = @admin.id
+        session[:user_name] = @admin.username
         redirect_to admin_index_path
     else 
          redirect_to admin_login_path, alert:"" 
