@@ -23,9 +23,12 @@
 							%td.text-center= course.admin_course_id
 							%td.text-center= course.long_title
 							- if course.is_active?
-								%td.text-center= link_to 'Details', course
+								%td.text-center
+									= link_to 'Details', course
+									= link_to 'History', course_history_path(course)
+									= link_to 'Edit', edit_course_path(course)
 							- else
-								%td.text-center= link_to 'Edit', edit_course_path(course)
+								%td
 								
 
 	%div.row.justify-content-center
@@ -33,8 +36,3 @@
 			= link_to 'New', new_course_path,  :class => 'btn btn-primary'
 		%div.col-md-2
 			= raw pagy_bootstrap_nav_js(@pagy)
-
-		
-		
-		
-		
