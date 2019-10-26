@@ -1,0 +1,1178 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#View_Page___1 {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1280px;
+	height: 1138px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	--web-view-name: View Page – 1;
+	--web-view-id: View_Page___1;
+	--web-enable-deep-linking: true;
+}
+#COMPUTER_SYSTEMS_UG {
+	position: absolute;
+	left: 55px;
+	top: 66px;
+	overflow: hidden;
+	width: 571px;
+	height: 41px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(77,77,77,1);
+}
+#Total_Earnings {
+	position: absolute;
+	width: 370px;
+	height: 133px;
+	left: 855px;
+	top: 224px;
+	overflow: visible;
+}
+#BG {
+}
+.BG {
+	position: absolute;
+	overflow: visible;
+	width: 388px;
+	height: 151px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+
+}
+#ID29_02_2020 {
+	position: absolute;
+	left: 20px;
+	top: 65px;
+	overflow: visible;
+	width: 124px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(77,79,92,1);
+}
+#Date_Started {
+	opacity: 0.5;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Total_Sales {
+	position: absolute;
+	width: 370px;
+	height: 133px;
+	left: 455px;
+	top: 224px;
+	overflow: visible;
+}
+#BG_A23_Rectangle_2 {
+	
+}
+.BG_A23_Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 388px;
+	height: 151px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#ID0283823 {
+	position: absolute;
+	left: 20px;
+	top: 66px;
+	overflow: visible;
+	width: 94px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(77,79,92,1);
+}
+#Course_ID {
+	opacity: 0.5;
+	position: absolute;
+	left: 20px;
+	top: 21px;
+	overflow: visible;
+	width: 61px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Total_Views {
+	position: absolute;
+	width: 370px;
+	height: 133px;
+	left: 55px;
+	top: 224px;
+	overflow: visible;
+}
+#BG_A23_Rectangle_3 {
+}
+.BG_A23_Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 388px;
+	height: 151px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Computer_Systems {
+	position: absolute;
+	left: 20px;
+	top: 64px;
+	overflow: hidden;
+	width: 310px;
+	white-space: normal;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(77,79,92,1);
+}
+#Long_Course_Title {
+	opacity: 0.5;
+	position: absolute;
+	left: 20px;
+	top: 21px;
+	overflow: visible;
+	width: 110px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Total_Views_A23_Group_4 {
+	position: absolute;
+	width: 1170px;
+	height: 345px;
+	left: 55px;
+	top: 383px;
+	overflow: visible;
+}
+
+.BG_A23_Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 1188px;
+	height: 363px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Total_Views_A23_Group_5 {
+	position: absolute;
+	width: 352px;
+	height: 341px;
+	left: 55px;
+	top: 754px;
+	overflow: visible;
+}
+#BG_A23_Rectangle_5 {
+}
+.BG_A23_Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 370px;
+	height: 359px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Total_Views_A23_Group_6 {
+	position: absolute;
+	width: 352px;
+	height: 341px;
+	left: 466px;
+	top: 754px;
+	overflow: visible;
+}
+#BG_A23_Rectangle_6 {
+}
+.BG_A23_Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 370px;
+	height: 359px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Total_Views_A23_Group_7 {
+	position: absolute;
+	width: 352px;
+	height: 341px;
+	left: 876px;
+	top: 754px;
+	overflow: visible;
+}
+#BG_A23_Rectangle_7 {
+}
+.BG_A23_Rectangle_7 {
+	position: absolute;
+	overflow: visible;
+	width: 370px;
+	height: 359px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Course_Description {
+	position: absolute;
+	left: 77px;
+	top: 403px;
+	overflow: hidden;
+	width: 212px;
+	height: 37px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	color: rgba(77,77,77,1);
+}
+#This_course_introduces_the_ele {
+	position: absolute;
+	left: 90px;
+	top: 465px;
+	overflow-y: scroll;
+	width: 1110px;
+	height: 219px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(77,77,77,1);
+}
+#Catalog_Data {
+	position: absolute;
+	left: 55px;
+	top: 133px;
+	overflow: hidden;
+	width: 119px;
+	height: 24px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Offerings {
+	position: absolute;
+	left: 195px;
+	top: 133px;
+	overflow: hidden;
+	width: 81px;
+	height: 24px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Components {
+	position: absolute;
+	left: 297px;
+	top: 133px;
+	overflow: hidden;
+	width: 111px;
+	height: 24px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Scheduling {
+	position: absolute;
+	left: 429px;
+	top: 133px;
+	overflow: hidden;
+	width: 111px;
+	height: 24px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Publication {
+	position: absolute;
+	left: 561px;
+	top: 133px;
+	overflow: hidden;
+	width: 111px;
+	height: 24px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(112,112,112,1);
+}
+#Head {
+	position: absolute;
+	width: 308px;
+	height: 44px;
+	left: 77px;
+	top: 774px;
+	overflow: visible;
+}
+.Divider {
+	overflow: visible;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	width: 308px;
+	height: 1px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Course_Units {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 99px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(77,79,92,1);
+}
+#Head_A23_Group_9 {
+	position: absolute;
+	width: 310.748px;
+	height: 44px;
+	left: 487.612px;
+	top: 774px;
+	overflow: visible;
+}
+.Divider_A23_Path_2 {
+	overflow: visible;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	width: 310.748px;
+	height: 1px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Honours_Count {
+	position: absolute;
+	left: 0.388px;
+	top: 0px;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(77,79,92,1);
+}
+#Head_A23_Group_10 {
+	position: absolute;
+	width: 310.748px;
+	height: 44px;
+	left: 898px;
+	top: 774px;
+	overflow: visible;
+}
+.Divider_A23_Path_3 {
+	overflow: visible;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	width: 310.748px;
+	height: 1px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Course_Grading {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(77,79,92,1);
+}
+.Divider_A23_Rectangle_8 {
+	position: absolute;
+	overflow: visible;
+	width: 330px;
+	height: 1px;
+	left: 77px;
+	top: 439px;
+}
+#New_Customers {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 77px;
+	top: 838px;
+	overflow: visible;
+}
+#ID3_00 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Minimum_Units {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 96px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_13 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 488px;
+	top: 838px;
+	overflow: visible;
+}
+#Active {
+	opacity: 0.5;
+	position: absolute;
+	left: 275px;
+	top: 11px;
+	overflow: visible;
+	width: 34px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Last_Course_of_Mult_Term_Seq {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 182px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_14 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_2 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_15 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 898px;
+	top: 838px;
+	overflow: visible;
+}
+#M10 {
+	opacity: 0.5;
+	position: absolute;
+	left: 286px;
+	top: 11px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Grading_Basis {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 86px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_16 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_3 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_17 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 77px;
+	top: 903px;
+	overflow: visible;
+}
+#ID3_00_A23_Text_24 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Maximum_Units {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 99px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_18 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_4 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_4 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_19 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 488px;
+	top: 903px;
+	overflow: visible;
+}
+#Actual_Units {
+	opacity: 0.5;
+	position: absolute;
+	left: 243px;
+	top: 11px;
+	overflow: visible;
+	width: 66px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Enrolment_Unit_Load_Type {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 164px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_20 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_5 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_5 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_21 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 77px;
+	top: 968px;
+	overflow: visible;
+}
+#ID3_00_A23_Text_28 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Academic_Progress_Units {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 155px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_22 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_6 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_23 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 488px;
+	top: 968px;
+	overflow: visible;
+}
+#ID3_00_A23_Text_30 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Course_Count {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 86px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_24 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_7 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_7 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_25 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 77px;
+	top: 1033px;
+	overflow: visible;
+}
+#ID3_00_A23_Text_32 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Financial_Aid_Progress_Units {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 174px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_26 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_8 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_8 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A23_Group_27 {
+	position: absolute;
+	width: 308px;
+	height: 38px;
+	left: 488px;
+	top: 1033px;
+	overflow: visible;
+}
+#ID10_0 {
+	opacity: 0.5;
+	position: absolute;
+	left: 285px;
+	top: 11px;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Course_Contact_Hours {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A23_Group_28 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A23_Ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A23_BooleanGroup_9 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_2 {
+	overflow: visible;
+	position: absolute;
+	top: 168.5px;
+	left: 55.5px;
+	width: 69px;
+	height: 3px;
+}
+#Alexander {
+	position: absolute;
+	left: 1126.5px;
+	top: 69.5px;
+	overflow: hidden;
+	width: 78px;
+	height: 18px;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(0,0,0,1);
+}
+#Admin {
+	position: absolute;
+	left: 1126.5px;
+	top: 90.5px;
+	overflow: hidden;
+	width: 78px;
+	height: 18px;
+	line-height: 25px;
+	margin-top: -6.5px;
+	text-align: left;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+#title_24px {
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	left: 353.01px;
+	top: 243px;
+	overflow: visible;
+}
+.Path_311 {
+	overflow: visible;
+	position: absolute;
+	top: 6.224px;
+	left: 7.665px;
+	width: 21.67px;
+	height: 22.996px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_312 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 37px;
+	height: 37px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#widgets_24px {
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	left: 753px;
+	top: 243px;
+	overflow: visible;
+}
+.Path_313 {
+	overflow: visible;
+	position: absolute;
+	top: 1.69px;
+	left: 3px;
+	width: 32.32px;
+	height: 32.31px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_314 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 37px;
+	height: 37px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#date_range_24px {
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	left: 1153px;
+	top: 243px;
+	overflow: visible;
+}
+.Path_315 {
+	overflow: visible;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	width: 31px;
+	height: 33px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_316 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 37px;
+	height: 37px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_245 {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	left: 1074.999px;
+	top: 67px;
+	overflow: visible;
+}

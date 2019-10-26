@@ -23,9 +23,10 @@ admins = [
 		{:username => 'test2', :password => '123', :usertype => 'Faculty'},
 		{:username => 'test3', :password => '123', :usertype => 'Admin'}
 	]
-	admins.each do |attributes|
-        Admin.find_or_create_by! attributes
-    end
+
+admins.each do |attributes|
+  Admin.find_or_create_by! attributes
+end
 
 course_catalogue_table.each do |row|
 	c = Course.new

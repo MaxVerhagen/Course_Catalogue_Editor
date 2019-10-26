@@ -1,10 +1,50 @@
--if session[:type] != nil
-    %h2.TitleTextv Welcome #{session[:user_name]}
-    %h2.TitleTextv ID #{session[:user_id]}
-    %h2.TitleTextv Type #{session[:type]}
+-# -if session[:type] != nil
+-#     %h2.TitleTextv Welcome #{session[:user_name]}
+-#     %h2.TitleTextv ID #{session[:user_id]}
+-#     %h2.TitleTextv Type #{session[:type]}
     
     
--if session[:type] == "Admin"
-    = link_to 'Log Out', admin_destroy_path, :class => 'subTextv'
--else
-    = link_to 'Log_In', admin_login_path, :class => 'subTextv'
+-# -if session[:type] == "Admin"
+-#     = link_to 'Log Out', admin_destroy_path, :class => 'subTextv'
+-# -else
+-#     = link_to 'Log_In', admin_login_path, :class => 'subTextv'
+
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Welcome!
+    %link{:href => "/assets/welcomePage.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #View_Page___3
+      %svg.Rectangle_182
+        %pattern#Rectangle_182_A25_Rectangle_2_pattern{:elementid => "Rectangle_182_A25_Rectangle_2", :height => "100%", :width => "100%", :x => "0", :y => "0"}
+          %image{:height => "100%", :href => "/images/Rectangle_182_A25_Rectangle_2_pattern.png", :width => "100%", :x => "0", "xlink:href" => "Rectangle_182_A25_Rectangle_2_pattern.png", :y => "0"}
+        %rect#Rectangle_182{:fill => "url(#Rectangle_182_A25_Rectangle_2_pattern)", :height => "67", :rx => "0", :ry => "0", :width => "197", :x => "0", :y => "0"}
+      #Group_3
+        %svg{:style => "width:inherit;height:inherit;overflow:visible;"}
+          %rect{:fill => "url(#Group_3_A25_Group_3_pattern)", :height => "100%", :width => "100%"}
+          %pattern#Group_3_A25_Group_3_pattern{:elementid => "Group_3_A25_Group_3", :height => "100%", :width => "100%", :x => "0", :y => "0"}
+            %image{:height => "100%", :href => "/images/Group_3_A25_Group_3_pattern.png", :width => "100%", :x => "0", "xlink:href" => "Group_3_A25_Group_3_pattern.png", :y => "0"}
+      #Welcome__Alexander_
+        %span Welcome, #{session[:user_name]}!
+      #Access_your_cources__edit_them
+        %span Access your cources, edit them view them, but most of all, experience them!
+      #ID__20__Type__Admin
+        %span
+          ID: #{session[:user_id]}
+          = succeed "Type: #{session[:type]}" do
+            %br/
+      #Sign_out
+        -if session[:type] == "Admin"
+          = link_to 'Sign Out', admin_destroy_path, :class => 'subTextv'
+      %svg.Rectangle_181
+        %pattern#Rectangle_181_A25_Rectangle_6_pattern{:elementid => "Rectangle_181_A25_Rectangle_6", :height => "100%", :width => "100%", :x => "0", :y => "0"}
+          %image{:height => "100%", :href => "/images/Rectangle_181_A25_Rectangle_6_pattern.png", :width => "100%", :x => "0", "xlink:href" => "Rectangle_181_A25_Rectangle_6_pattern.png", :y => "0"}
+        %rect#Rectangle_181{:fill => "url(#Rectangle_181_A25_Rectangle_6_pattern)", :height => "67", :rx => "0", :ry => "0", :width => "291", :x => "0", :y => "0"}
+      #Got_to_courses
+        %span Got to courses
+
+

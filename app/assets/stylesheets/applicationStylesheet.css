@@ -1,0 +1,324 @@
+		.inputBoxes {
+			outline-width: 0;
+
+		}
+
+		.mediaViewInfo {
+			--web-view-name: Sign in page;
+			--web-view-id: Sign_in_page;
+			--web-enable-deep-linking: true;
+		}
+
+		:root {
+			--web-view-ids: Sign_in_page;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#Sign_in_page {
+			position: absolute;
+			box-sizing: border-box;
+			background: #E5E5E5;
+			width: 1292px;
+			height: 775px;
+			background-color: rgba(240, 240, 247, 1);
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			--web-view-name: Sign in page;
+			--web-view-id: Sign_in_page;
+			--web-enable-deep-linking: true;
+		}
+
+		.Rectangle_164 {
+			display: none;
+			position: absolute;
+			overflow: visible;
+			width: 800px;
+			height: 960px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#text {
+			position: absolute;
+			width: 646px;
+			height: 775px;
+			left: 646px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.Rectangle_163 {
+			position: absolute;
+			overflow: visible;
+			width: 646px;
+			height: 775px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Logo {
+			position: absolute;
+			left: 221px;
+			top: 189px;
+			overflow: visible;
+			width: 215px;
+			white-space: nowrap;
+			text-align: left;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 28px;
+			color: rgba(67, 66, 93, 1);
+			letter-spacing: 2px;
+		}
+
+		#username {
+			position: absolute;
+			width: 322.917px;
+			height: 25.184px;
+			left: 162.368px;
+			top: 300px;
+			overflow: visible;
+		}
+
+		#Username {
+			position: absolute;
+			left: 2.0px;
+			top: 3px;
+			overflow: visible;
+			width: 800px;
+			white-space: nowrap;
+			line-height: 20px;
+			margin-top: -4px;
+			text-align: left;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			color: rgba(67, 66, 93, 1);
+		}
+
+		.Path_297 {
+			overflow: visible;
+			position: absolute;
+			top: 25.184px;
+			left: 0px;
+			width: 322.917px;
+			height: 2px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#password {
+			position: absolute;
+			width: 322.917px;
+			height: 25.346px;
+			left: 162.368px;
+			top: 362px;
+			overflow: visible;
+		}
+
+		#Password {
+			position: absolute;
+			left: 2.0px;
+			top: 3px;
+			overflow: visible;
+			width: 800px;
+			white-space: nowrap;
+			line-height: 20px;
+			margin-top: -4px;
+			text-align: left;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			color: rgba(67, 66, 93, 1);
+		}
+
+		.Path_297_A25_Path_2 {
+			overflow: visible;
+			position: absolute;
+			top: 25.346px;
+			left: 0px;
+			width: 322.917px;
+			height: 2px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+
+		#Welcome_Back__Please_login_to_ {
+			opacity: 0.5;
+			position: absolute;
+			left: 195px;
+			top: 237px;
+			overflow: visible;
+			width: 261px;
+			white-space: nowrap;
+			text-align: center;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			color: rgba(77, 79, 92, 1);
+		}
+
+		#RememberMe {
+			position: absolute;
+			width: 101px;
+			height: 17px;
+			left: 162px;
+			top: 423px;
+			overflow: visible;
+		}
+
+		.Rectangle_165 {
+			position: absolute;
+			overflow: visible;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Remember_me {
+			position: absolute;
+			left: 27px;
+			top: 0px;
+			overflow: visible;
+			width: 75px;
+			white-space: nowrap;
+			line-height: 20px;
+			margin-top: -4px;
+			text-align: left;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			color: rgba(67, 66, 93, 1);
+		}
+
+		#Forgot_Password {
+			position: absolute;
+			left: 401px;
+			top: 423px;
+			overflow: visible;
+			width: 84px;
+			white-space: nowrap;
+			line-height: 20px;
+			margin-top: -4px;
+			text-align: right;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			color: rgba(67, 66, 93, 1);
+		}
+
+		#btn_login {
+			position: absolute;
+			width: 150px;
+			height: 41px;
+			left: 162px;
+			top: 489px;
+			overflow: visible;
+			cursor: pointer;
+		}
+
+		.Rectangle_166 {
+			position: absolute;
+			overflow: visible;
+			width: 150px;
+			height: 41px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Login {
+			position: absolute;
+			left: 55px;
+			top: 12px;
+			overflow: visible;
+			width: 33px;
+			white-space: nowrap;
+			text-align: center;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			color: rgba(255, 255, 255, 1);
+			background: rgba(67,66,93,1);
+			border: none;
+		}
+
+		#btn_signup {
+			position: absolute;
+			width: 149px;
+			height: 41px;
+			left: 336px;
+			top: 489px;
+			overflow: visible;
+			cursor: pointer;
+		}
+
+		.Rectangle_167 {
+			position: absolute;
+			overflow: visible;
+			width: 149px;
+			height: 41px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Sign_up {
+			position: absolute;
+			left: 49px;
+			top: 12px;
+			overflow: visible;
+			width: 45px;
+			white-space: nowrap;
+			text-align: center;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			color: rgba(77, 79, 92, 1);
+		}
+
+		#Group_244 {
+			position: absolute;
+			width: 646px;
+			height: 775px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.Rectangle_176 {
+			position: absolute;
+			overflow: visible;
+			width: 646px;
+			height: 775px;
+			left: 0px;
+			top: 0px;
+		}
+
+		#Group_4 {
+			position: absolute;
+			width: 646px;
+			height: 775px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+        }
+        
+        .input_field {
+            border: none;
+			outline-width: 0;
+        }
+
+        .image_style {
+            width:inherit;
+            height:inherit;
+            overflow:visible;
+        }
