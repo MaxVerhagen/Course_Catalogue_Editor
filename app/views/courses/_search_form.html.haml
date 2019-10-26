@@ -10,3 +10,11 @@
 				= f.label "Hide Inactive", class: "form-check-label"
 			%div.action
 				= f.submit 'Search', class: "btn btn-primary"
+			%div.col-2
+				-if session[:type] == nil
+					%span Not Logged in 
+					= link_to "Login", admin_login_path, class: "btn btn-success"
+				-else
+					%span Logged in as:
+					%strong #{session[:user_name]}
+					= link_to "Logout", admin_destroy_path, class: "btn btn-danger"
