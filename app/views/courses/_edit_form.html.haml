@@ -125,25 +125,25 @@
       #Press_label_A26_Group_20
         %svg.Rectangle_175_A26_Rectangle_14
           %rect#Rectangle_175_A26_Rectangle_14{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_20{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_20{:placeholder => @course.is_last?, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Last_Course_of_Mult_Term_Seque
           %span Last Course of Mult Term Sequence
       #Press_label_A26_Group_21
         %svg.Rectangle_175_A26_Rectangle_15
           %rect#Rectangle_175_A26_Rectangle_15{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_22{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_22{:placeholder => @course.offerings.first.offering_number, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Offering_Number
           %span Offering Number
       #Press_label_A26_Group_22
         %svg.Rectangle_175_A26_Rectangle_16
           %rect#Rectangle_175_A26_Rectangle_16{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_24{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_24{:placeholder => @course.max_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Maximum_Units
           %span Maximum Units
       #Press_label_A26_Group_23
         %svg.Rectangle_175_A26_Rectangle_17
           %rect#Rectangle_175_A26_Rectangle_17{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %select#Placeholder_A26_Text_26{:placeholder => @course.max_units, :style => "left:10px;border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149);background-color: white", :type => "text"}
+        %select#Placeholder_A26_Text_26{:style => "left:10px;border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149);background-color: white", :type => "text"}
           %option{:value => "Actual Units"} Actual Units
           %option{:value => "Not Actual"} Not Actual
         #Enrolment_Unit_Load_Type
@@ -195,13 +195,13 @@
       #Press_label_A26_Group_31
         %svg.Rectangle_175_A26_Rectangle_25
           %rect#Rectangle_175_A26_Rectangle_25{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_42{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_42{:placeholder => @course.enrollment_unit_calc, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Course_Count
           %span Course Count
       #Press_label_A26_Group_32
         %svg.Rectangle_175_A26_Rectangle_26
           %rect#Rectangle_175_A26_Rectangle_26{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_44{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_44{:placeholder => @course.offerings.first.catalogue_num, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Catalog_Number
           %span Catalog Number
       #Press_label_A26_Group_33
@@ -219,7 +219,7 @@
       #Press_label_A26_Group_35
         %svg.Rectangle_175_A26_Rectangle_29
           %rect#Rectangle_175_A26_Rectangle_29{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_50{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_50{:placeholder => @course.offerings.first.subject, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Subject
           %span Subject
       #Press_label_A26_Group_36
@@ -233,13 +233,13 @@
       #Press_label_A26_Group_37
         %svg.Rectangle_175_A26_Rectangle_31
           %rect#Rectangle_175_A26_Rectangle_31{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_54{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_54{:placeholder => @course.offerings.first.campus, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Campus
           %span Campus
       #Press_label_A26_Group_38
         %svg.Rectangle_175_A26_Rectangle_32
           %rect#Rectangle_175_A26_Rectangle_32{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_56{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_56{:placeholder => @course.offerings.first.organisations.first.name, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Academic_Organisation
           %span Academic Organisation
       #Row_4

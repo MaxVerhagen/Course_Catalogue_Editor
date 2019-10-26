@@ -5,6 +5,14 @@ class Course < ApplicationRecord
 		status
 	end
 
+	def is_last?
+		if last_course then
+			return "True"
+		else
+			return "False"
+		end
+	end
+
 	def self.active_courses
 		return Course.where(status: true)
 	end
