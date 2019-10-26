@@ -14,7 +14,8 @@
                         = link_to "Back", course_path, class: "btn btn-secondary"
             %tbody
                 - @theofferings.each do |offer|
-                    %td.text-center= offer.subject
-                    %td.text-center= offer.campus
-                    %td
+                    %tr
+                        %td.text-center= offer.subject
+                        %td.text-center= offer.campus
+                        %td
 								
