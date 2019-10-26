@@ -35,8 +35,8 @@ course_catalogue_table.each do |row|
 	row['Status'] == "I" ? c.status = false : c.status = true
 	c.short_title = row['Short_Title']
 	c.long_title = row["Long_Title"]
-	c.min_units = row["Min_Unit"].to_i
-	c.max_units = row["Max_Unit"].to_i
+	c.min_units = row["Min_Units"].to_i
+	c.max_units = row["Max_Units"].to_i
 	c.progress_units = row["Prgrss_Unt"].to_f
 	c.grading = row["Grading"]
 	row['Last_Crse'] == "N" ? c.last_course  = false : c.last_course  = true
