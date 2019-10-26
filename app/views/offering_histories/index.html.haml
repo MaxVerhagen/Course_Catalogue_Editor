@@ -1,0 +1,19 @@
+%h1 Listing offering_histories
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @offering_histories.each do |offering_history|
+      %tr
+        %td= link_to 'Show', offering_history
+        %td= link_to 'Edit', edit_offering_history_path(offering_history)
+        %td= link_to 'Destroy', offering_history, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Offering history', new_offering_history_path

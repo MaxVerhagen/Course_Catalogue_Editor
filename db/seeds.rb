@@ -30,7 +30,7 @@ end
 
 course_catalogue_table.each do |row|
 	c = Course.new
-	c_h = Course_History.new
+	c_h = CourseHistory.new
 
 	c.effective_date = Date.parse(row['Eff_Date'])
 	c_h.effective_date = Date.parse(row['Eff_Date'])
@@ -79,7 +79,7 @@ end
 
 course_offering_table.each do |row|
 	o = Offering.new
-	o_h = Offering_History.new
+	o_h = OfferingHistory.new
 
 	o.admin_course_id = row["Course_ID"].to_i
 	o_h.admin_course_id = row["Course_ID"].to_i
@@ -94,7 +94,7 @@ course_offering_table.each do |row|
 	o.schedule_course = row["Schedule_Course"]
 	o_h.schedule_course = row["Schedule_Course"]
 	o.course = Course.find_by(admin_course_id: o.admin_course_id)
-	o_h.course_history = Course_History.find_by(admin_course_id: o.admin_course_id)
+	o_h.course_history = CourseHistory.find_by(admin_course_id: o.admin_course_id)
 
 	o.save
 	o_h.save
