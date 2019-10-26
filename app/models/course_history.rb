@@ -1,3 +1,4 @@
 class CourseHistory < ApplicationRecord
-  belongs_to :course
+	has_many :offering_history
+	belongs_to :course
 end
