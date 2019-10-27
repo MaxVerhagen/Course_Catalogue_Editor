@@ -1,5 +1,8 @@
 class AdminController < ApplicationController
+  skip_before_action :verify_authenticity_token
+	
   def index
+	puts "Type #{session[:type]}"
   end
   
   def adminlist
@@ -39,14 +42,18 @@ class AdminController < ApplicationController
   end
     
   def takecredentials
-    @admin = Admin.find_by username: params[:username]
-    if @admin && (@admin.password == params[:password] )
+	@admin = Admin.find_by username: params[:admin][:username]
+
+    if @admin && (@admin.password == params[:admin][:password] )
         session[:type] = "Admin"
         session[:user_id] = @admin.id
-        session[:user_name] = @admin.username
-        redirect_to admin_index_path
+		session[:user_name] = @admin.username
+		
+		puts "Type #{session[:type]}"
+
+        redirect_to protocol: 'https://', action: 'index'
     else 
-         redirect_to admin_login_path, alert:"" 
+        redirect_to protocol: 'https://', action: 'login'
     end
   end
   
@@ -54,6 +61,6 @@ class AdminController < ApplicationController
       session[:type] = nil
       session[:user_id] = nil
       session[:user_name] = nil
-      redirect_to admin_login_path
+      redirect_to protocol: 'https://', action: 'login'
   end
 end

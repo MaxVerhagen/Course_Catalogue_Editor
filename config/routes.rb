@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 	resources :admin
 	controller :admin do
     get 'login' => :new
-    post 'admin/login' => :takecredentials
+    post 'admin/login' => :takecredentials, as: 'login_credentials'
     get 'logout' => :destroy
     post 'admin/create' => :a_create
     post 'admin/erase' => :delete
