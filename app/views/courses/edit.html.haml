@@ -1,8 +1,9 @@
 -# %h1.display-4 Editing course
-
-= render 'form'
-
-%div.card-body
-		= render 'edit_form'
-
-
+-if session[:type] == "Admin"
+    = render 'form'
+    
+    %div.card-body
+    = render 'edit_form'
+-else 
+    %p Unable to display due to permissions.
+    %p=link_to "Click Here to go back", courses_path

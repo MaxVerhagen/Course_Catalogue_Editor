@@ -6,18 +6,18 @@ class CoursesController < ApplicationController
 
   # GET /courses
   # GET /courses.json
-	def index
+	def index		
 		if params.has_key? :sort then
 			@sort = params[:sort]
 
 			@pagy, @courses = pagy(Course.sorted @sort)
 		else
 			@sort = "ida"
-			
+
+			@courses = Course.all
+		
 			if params[:i]== "1" then
-				@pagy, @courses = pagy(Course.active_courses)
-			else
-				@pagy, @courses = pagy(Course.all)
+				@courses = Course.active_courses
 			end
 
 			if params.key?(:qid) then
@@ -38,7 +38,8 @@ class CoursesController < ApplicationController
 	def search
 		if !params[:course][:course_id].empty? then
 			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], i: params[:course][:hide_inactive]
-		elsif !params[:course][:course_title] then
+		elsif !params[:course][:course_title].empty? then
+			puts "sdfsd"
 			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], i: params[:course][:hide_inactive]
 		end
 	end
@@ -96,6 +97,11 @@ class CoursesController < ApplicationController
 	  format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
 	  format.json { head :no_content }
 	end
+  end
+  
+  def offerings
+  	@course = Course.find params[:id]
+  	@theofferings = Offering.where(admin_course_id: @course.admin_course_id)
   end
 
   private

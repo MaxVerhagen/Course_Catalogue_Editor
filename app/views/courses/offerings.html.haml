@@ -1,0 +1,21 @@
+%h1.display-3.text-center= @course.long_title
+%h3.display-3.text-center Offering List
+
+%div.row.justify-content-center
+    %div.col-9
+        %table.table.table-hover
+            %thead.thead-dark
+                %tr
+                    %th.text-center
+                        %p Subject
+                    %th.text-center
+                        %p Campus
+                    %th.text-center
+                        = link_to "Back", course_path, class: "btn btn-secondary"
+            %tbody
+                - @theofferings.each do |offer|
+                    %tr
+                        %td.text-center= offer.subject
+                        %td.text-center= offer.campus
+                        %td
+								
