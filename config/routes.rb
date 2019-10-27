@@ -26,6 +26,6 @@ Rails.application.routes.draw do
 	resources :courses
 	post "courses/search", to: "courses#search" 
 
-	root to: "courses#index"
+	root to: "admin#login"
    
 end
