@@ -1,5 +1,6 @@
 class Course < ApplicationRecord
 	has_many :offerings
+	has_many :course_histories
 
 	def is_active?
 		status

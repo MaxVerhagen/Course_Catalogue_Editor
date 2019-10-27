@@ -115,29 +115,29 @@
       #Date_Started
         %span Date Started
       .Image_21
-        %input#picker.form-control{:type => "date"}/
+        %input#picker.form-control{:name => "course[effective_date]", :value => @course.effective_date, :type => "date"}/
       #Press_label_A26_Group_19
         %svg.Rectangle_175_A26_Rectangle_13
           %rect#Rectangle_175_A26_Rectangle_13{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder{:placeholder => @course.min_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder{:name => 'course[min_units]', :value => @course.min_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Minimum_Units
           %span Minimum Units
       #Press_label_A26_Group_20
         %svg.Rectangle_175_A26_Rectangle_14
           %rect#Rectangle_175_A26_Rectangle_14{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_20{:placeholder => @course.is_last?, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_20{:name => 'course[last_course]', :value => @course.is_last?, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Last_Course_of_Mult_Term_Seque
           %span Last Course of Mult Term Sequence
       #Press_label_A26_Group_21
         %svg.Rectangle_175_A26_Rectangle_15
           %rect#Rectangle_175_A26_Rectangle_15{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_22{:placeholder => @course.offerings.first.offering_number, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_22{:value => @course.offerings.first.offering_number, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Offering_Number
           %span Offering Number
       #Press_label_A26_Group_22
         %svg.Rectangle_175_A26_Rectangle_16
           %rect#Rectangle_175_A26_Rectangle_16{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_24{:placeholder => @course.max_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_24{:name => 'course[max_units]', :value => @course.max_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Maximum_Units
           %span Maximum Units
       #Press_label_A26_Group_23
@@ -189,37 +189,37 @@
       #Press_label_A26_Group_30
         %svg.Rectangle_175_A26_Rectangle_24
           %rect#Rectangle_175_A26_Rectangle_24{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_40{:placeholder => @course.progress_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_40{:name => 'course[progress_units]', :value => @course.progress_units, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Academic_Progress_Units
           %span Academic Progress Units
       #Press_label_A26_Group_31
         %svg.Rectangle_175_A26_Rectangle_25
           %rect#Rectangle_175_A26_Rectangle_25{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_42{:placeholder => @course.enrollment_unit_calc, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_42{:name => 'course[enrollment_unit_calc]', :value => @course.enrollment_unit_calc, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Course_Count
           %span Course Count
       #Press_label_A26_Group_32
         %svg.Rectangle_175_A26_Rectangle_26
           %rect#Rectangle_175_A26_Rectangle_26{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_44{:placeholder => @course.offerings.first.catalogue_num, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_44{:value => @course.offerings.first.catalogue_num, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Catalog_Number
           %span Catalog Number
       #Press_label_A26_Group_33
         %svg.Rectangle_175_A26_Rectangle_27
           %rect#Rectangle_175_A26_Rectangle_27{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_46{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_46{:value => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Financial_Aid_Progress_Units
           %span Financial Aid Progress Units
       #Press_label_A26_Group_34
         %svg.Rectangle_175_A26_Rectangle_28
           %rect#Rectangle_175_A26_Rectangle_28{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_48{:placeholder => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_48{:value => "3.00", :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Course_Contact_Hours
           %span Course Contact Hours
       #Press_label_A26_Group_35
         %svg.Rectangle_175_A26_Rectangle_29
           %rect#Rectangle_175_A26_Rectangle_29{:fill => "rgba(255,255,255,1)", :height => "40", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(59,134,255,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "400", :x => "0", :y => "0"}
-        %input#Placeholder_A26_Text_50{:placeholder => @course.offerings.first.subject, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
+        %input#Placeholder_A26_Text_50{:value => @course.offerings.first.subject, :style => "border: none;outline-width: 0;width: 380px; color:rgb(128, 132, 149)", :type => "text"}/
         #Subject
           %span Subject
       #Press_label_A26_Group_36

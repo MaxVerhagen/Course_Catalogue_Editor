@@ -1,0 +1,42 @@
+-# %h1 Listing course_histories
+
+-# %table
+-#   %thead
+-#     %tr
+-#       %th
+-#       %th
+-#       %th
+
+-#   %tbody
+-#     - @course_histories.each do |course_history|
+-#       %tr
+-#         %td= link_to 'Show', course_history
+-#         %td= link_to 'Edit', edit_course_history_path(course_history)
+-#         %td= link_to 'Destroy', course_history, method: :delete, data: { confirm: 'Are you sure?' }
+
+-# %br
+
+-# = link_to 'New Course history', new_course_history_path
+
+%h1.display-3.text-center= "#{@course.long_title} Edit History"
+
+%div.container-fluid			
+	%div.row.justify-content-center
+		%div.col-9
+			%table.table.table-hover
+				%thead.thead-dark
+					%tr
+						%th.text-center Course ID
+						%th.text-center Course Title
+						%th.text-center Edit Date
+						%th
+
+				%tbody
+					- @course_histories.each do |course_history|
+						%tr
+							%td.text-center= course_history.admin_course_id
+							%td.text-center= course_history.long_title
+							%td.text-center= course_history.created_at
+							%td.text-center
+								= link_to 'Details', course_history_detail_path(course_history)
+								

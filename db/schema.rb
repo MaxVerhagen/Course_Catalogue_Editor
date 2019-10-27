@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_21_030637) do
+ActiveRecord::Schema.define(version: 2019_10_26_052546) do
 
   create_table "admins", force: :cascade do |t|
     t.string "username"
@@ -18,6 +18,26 @@ ActiveRecord::Schema.define(version: 2019_10_21_030637) do
     t.string "usertype"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "course_histories", force: :cascade do |t|
+    t.date "effective_date"
+    t.integer "admin_course_id"
+    t.boolean "status"
+    t.text "short_title"
+    t.text "long_title"
+    t.integer "min_units"
+    t.integer "max_units"
+    t.float "progress_units"
+    t.string "grading"
+    t.boolean "last_course"
+    t.integer "enrollment_unit_calc"
+    t.text "description"
+    t.integer "history_id"
+    t.integer "course_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_course_histories_on_course_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -35,6 +55,20 @@ ActiveRecord::Schema.define(version: 2019_10_21_030637) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "offering_histories", force: :cascade do |t|
+    t.integer "admin_course_id"
+    t.integer "offering_number"
+    t.string "subject"
+    t.string "catalogue_num"
+    t.string "campus"
+    t.string "schedule_course"
+    t.integer "course_id"
+    t.integer "course_history_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_history_id"], name: "index_offering_histories_on_course_history_id"
   end
 
   create_table "offerings", force: :cascade do |t|
