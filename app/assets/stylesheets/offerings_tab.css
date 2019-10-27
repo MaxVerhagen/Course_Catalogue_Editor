@@ -2,18 +2,18 @@
 	margin: 0;
 	padding: 0;
 }
-#View_Page___1 {
+#Offerings_Tab {
 	position: absolute;
 	box-sizing: border-box;
 	background: #E5E5E5;
 	width: 1280px;
-	height: 1138px;
+	height: 799px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	--web-view-name: View Page – 1;
-	--web-view-id: View_Page___1;
+	--web-view-name: Offerings Tab;
+	--web-view-id: Offerings_Tab;
 	--web-enable-deep-linking: true;
 }
 #COMPUTER_SYSTEMS_UG {
@@ -21,7 +21,7 @@
 	left: 55px;
 	top: 66px;
 	overflow: hidden;
-	width: 571px;
+	width: 371px;
 	height: 41px;
 	text-align: left;
 	font-family: Nunito;
@@ -38,8 +38,6 @@
 	top: 224px;
 	overflow: visible;
 }
-#BG {
-}
 .BG {
 	position: absolute;
 	overflow: visible;
@@ -48,7 +46,6 @@
 	left: 0px;
 	top: 0px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
-
 }
 #ID29_02_2020 {
 	position: absolute;
@@ -89,10 +86,7 @@
 	top: 224px;
 	overflow: visible;
 }
-#BG_A23_Rectangle_2 {
-	
-}
-.BG_A23_Rectangle_2 {
+.BG_A24_Rectangle_2 {
 	position: absolute;
 	overflow: visible;
 	width: 388px;
@@ -140,9 +134,8 @@
 	top: 224px;
 	overflow: visible;
 }
-#BG_A23_Rectangle_3 {
-}
-.BG_A23_Rectangle_3 {
+
+.BG_A24_Rectangle_3 {
 	position: absolute;
 	overflow: visible;
 	width: 388px;
@@ -182,109 +175,6 @@
 	font-size: 15px;
 	color: rgba(67,66,93,1);
 }
-#Total_Views_A23_Group_4 {
-	position: absolute;
-	width: 1170px;
-	height: 345px;
-	left: 55px;
-	top: 383px;
-	overflow: visible;
-}
-
-.BG_A23_Rectangle_4 {
-	position: absolute;
-	overflow: visible;
-	width: 1188px;
-	height: 363px;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
-}
-#Total_Views_A23_Group_5 {
-	position: absolute;
-	width: 352px;
-	height: 341px;
-	left: 55px;
-	top: 754px;
-	overflow: visible;
-}
-#BG_A23_Rectangle_5 {
-}
-.BG_A23_Rectangle_5 {
-	position: absolute;
-	overflow: visible;
-	width: 370px;
-	height: 359px;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
-}
-#Total_Views_A23_Group_6 {
-	position: absolute;
-	width: 352px;
-	height: 341px;
-	left: 466px;
-	top: 754px;
-	overflow: visible;
-}
-#BG_A23_Rectangle_6 {
-}
-.BG_A23_Rectangle_6 {
-	position: absolute;
-	overflow: visible;
-	width: 370px;
-	height: 359px;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
-}
-#Total_Views_A23_Group_7 {
-	position: absolute;
-	width: 352px;
-	height: 341px;
-	left: 876px;
-	top: 754px;
-	overflow: visible;
-}
-#BG_A23_Rectangle_7 {
-}
-.BG_A23_Rectangle_7 {
-	position: absolute;
-	overflow: visible;
-	width: 370px;
-	height: 359px;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
-}
-#Course_Description {
-	position: absolute;
-	left: 77px;
-	top: 403px;
-	overflow: hidden;
-	width: 212px;
-	height: 37px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 22px;
-	color: rgba(77,77,77,1);
-}
-#This_course_introduces_the_ele {
-	position: absolute;
-	left: 90px;
-	top: 465px;
-	overflow-y: scroll;
-	width: 1110px;
-	height: 219px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	color: rgba(77,77,77,1);
-}
 #Catalog_Data {
 	position: absolute;
 	left: 55px;
@@ -295,13 +185,13 @@
 	text-align: left;
 	font-family: Nunito;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: normal;
 	font-size: 18px;
 	color: rgba(112,112,112,1);
 }
 #Offerings {
 	position: absolute;
-	left: 195px;
+	left: 187px;
 	top: 133px;
 	overflow: hidden;
 	width: 81px;
@@ -355,707 +245,12 @@
 	font-size: 18px;
 	color: rgba(112,112,112,1);
 }
-#Head {
-	position: absolute;
-	width: 308px;
-	height: 44px;
-	left: 77px;
-	top: 774px;
-	overflow: visible;
-}
-.Divider {
-	overflow: visible;
-	position: absolute;
-	top: 43px;
-	left: 0px;
-	width: 308px;
-	height: 1px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#Course_Units {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-	width: 99px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	color: rgba(77,79,92,1);
-}
-#Head_A23_Group_9 {
-	position: absolute;
-	width: 310.748px;
-	height: 44px;
-	left: 487.612px;
-	top: 774px;
-	overflow: visible;
-}
-.Divider_A23_Path_2 {
-	overflow: visible;
-	position: absolute;
-	top: 43px;
-	left: 0px;
-	width: 310.748px;
-	height: 1px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#Honours_Count {
-	position: absolute;
-	left: 0.388px;
-	top: 0px;
-	overflow: visible;
-	width: 120px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	color: rgba(77,79,92,1);
-}
-#Head_A23_Group_10 {
-	position: absolute;
-	width: 310.748px;
-	height: 44px;
-	left: 898px;
-	top: 774px;
-	overflow: visible;
-}
-.Divider_A23_Path_3 {
-	overflow: visible;
-	position: absolute;
-	top: 43px;
-	left: 0px;
-	width: 310.748px;
-	height: 1px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#Course_Grading {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-	width: 119px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	color: rgba(77,79,92,1);
-}
-.Divider_A23_Rectangle_8 {
-	position: absolute;
-	overflow: visible;
-	width: 330px;
-	height: 1px;
-	left: 77px;
-	top: 439px;
-}
-#New_Customers {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 77px;
-	top: 838px;
-	overflow: visible;
-}
-#ID3_00 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Minimum_Units {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 96px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_13 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 488px;
-	top: 838px;
-	overflow: visible;
-}
-#Active {
-	opacity: 0.5;
-	position: absolute;
-	left: 275px;
-	top: 11px;
-	overflow: visible;
-	width: 34px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Last_Course_of_Mult_Term_Seq {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 182px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_14 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_2 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_2 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_15 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 898px;
-	top: 838px;
-	overflow: visible;
-}
-#M10 {
-	opacity: 0.5;
-	position: absolute;
-	left: 286px;
-	top: 11px;
-	overflow: visible;
-	width: 23px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Grading_Basis {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 86px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_16 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_3 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_3 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_17 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 77px;
-	top: 903px;
-	overflow: visible;
-}
-#ID3_00_A23_Text_24 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Maximum_Units {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 99px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_18 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_4 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_4 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_19 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 488px;
-	top: 903px;
-	overflow: visible;
-}
-#Actual_Units {
-	opacity: 0.5;
-	position: absolute;
-	left: 243px;
-	top: 11px;
-	overflow: visible;
-	width: 66px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Enrolment_Unit_Load_Type {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 164px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_20 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_5 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_5 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_21 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 77px;
-	top: 968px;
-	overflow: visible;
-}
-#ID3_00_A23_Text_28 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Academic_Progress_Units {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 155px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_22 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_6 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_6 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_23 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 488px;
-	top: 968px;
-	overflow: visible;
-}
-#ID3_00_A23_Text_30 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Course_Count {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 86px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_24 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_7 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_7 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_25 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 77px;
-	top: 1033px;
-	overflow: visible;
-}
-#ID3_00_A23_Text_32 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Financial_Aid_Progress_Units {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 174px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_26 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_8 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_8 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#New_Customers_A23_Group_27 {
-	position: absolute;
-	width: 308px;
-	height: 38px;
-	left: 488px;
-	top: 1033px;
-	overflow: visible;
-}
-#ID10_0 {
-	opacity: 0.5;
-	position: absolute;
-	left: 285px;
-	top: 11px;
-	overflow: visible;
-	width: 24px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: right;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(77,79,92,1);
-}
-#Course_Contact_Hours {
-	position: absolute;
-	left: 46px;
-	top: 10px;
-	overflow: visible;
-	width: 137px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Source Sans Pro;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(67,66,93,1);
-}
-#Icon_A23_Group_28 {
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-.Icon_BG_A23_Ellipse_9 {
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-}
-.New_customer_Icon_A23_BooleanGroup_9 {
-	overflow: visible;
-	position: absolute;
-	top: 11px;
-	left: 11px;
-	width: 16px;
-	height: 16px;
-	transform: matrix(1,0,0,1,0,0);
-}
 .Line_2 {
 	overflow: visible;
 	position: absolute;
 	top: 168.5px;
-	left: 55.5px;
-	width: 69px;
+	left: 188.5px;
+	width: 45px;
 	height: 3px;
 }
 #Alexander {
@@ -1167,6 +362,716 @@
 	width: 37px;
 	height: 37px;
 	transform: matrix(1,0,0,1,0,0);
+}
+#Total_Views_A24_Group_7 {
+	position: absolute;
+	width: 370px;
+	height: 341px;
+	left: 855px;
+	top: 383px;
+	overflow: visible;
+}
+
+.BG_A24_Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 388px;
+	height: 385px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Head {
+	position: absolute;
+	width: 328.748px;
+	height: 44px;
+	left: 877px;
+	top: 403px;
+	overflow: visible;
+}
+.Divider {
+	overflow: visible;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	width: 328.748px;
+	height: 1px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Course_Offering__Numerics {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 204px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(77,79,92,1);
+}
+#New_Customers {
+	position: absolute;
+	width: 326px;
+	height: 38px;
+	left: 877px;
+	top: 467px;
+	overflow: visible;
+}
+#Yes {
+	opacity: 0.5;
+	position: absolute;
+	left: 308px;
+	top: 11px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Schedule_Course {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 106px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A24_Group_11 {
+	position: absolute;
+	width: 326px;
+	height: 38px;
+	left: 877px;
+	top: 545px;
+	overflow: visible;
+}
+#Yes_A24_Text_18 {
+	opacity: 0.5;
+	position: absolute;
+	left: 308px;
+	top: 11px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Offering_Number {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 106px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A24_Group_12 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A24_Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A24_BooleanGroup_2 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#New_Customers_A24_Group_13 {
+	position: absolute;
+	width: 326px;
+	height: 38px;
+	left: 877px;
+	top: 623px;
+	overflow: visible;
+}
+#Yes_A24_Text_20 {
+	opacity: 0.5;
+	position: absolute;
+	left: 308px;
+	top: 11px;
+	overflow: visible;
+	width: 19px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Catalog_Number {
+	position: absolute;
+	left: 46px;
+	top: 10px;
+	overflow: visible;
+	width: 103px;
+	white-space: nowrap;
+	line-height: 25px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(67,66,93,1);
+}
+#Icon_A24_Group_14 {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Icon_BG_A24_Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.New_customer_Icon_A24_BooleanGroup_3 {
+	overflow: visible;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 16px;
+	height: 16px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Top_Product {
+	position: absolute;
+	width: 770px;
+	height: 367px;
+	left: 55px;
+	top: 383px;
+	overflow: visible;
+}
+
+.BG_A24_Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 788px;
+	height: 385px;
+	left: 0px;
+	top: 0px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.060);
+}
+#Row_3 {
+	position: absolute;
+	width: 730px;
+	height: 83px;
+	left: 20px;
+	top: 275px;
+	overflow: visible;
+}
+.Divider_A24_Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 1px;
+	left: 0px;
+	top: 82px;
+}
+.Row_BG {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+}
+#School_of_Computer_Science {
+	position: absolute;
+	left: 544px;
+	top: 33px;
+	overflow: visible;
+	width: 153px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Label {
+	position: absolute;
+	width: 90px;
+	height: 24px;
+	left: 360px;
+	top: 29px;
+	overflow: visible;
+}
+#Label_BG {
+	opacity: 0.2;
+}
+.Label_BG {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 24px;
+	left: 0px;
+	top: 0px;
+}
+#Label_Content {
+	opacity: 0.5;
+	position: absolute;
+	left: 23px;
+	top: 5px;
+	overflow: visible;
+	width: 45px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -6.5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+}
+#Product_Title {
+	position: absolute;
+	left: 76px;
+	top: 33px;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#home_work_24px {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	left: 20px;
+	top: 23px;
+	overflow: visible;
+}
+.Path_321 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 36px;
+	height: 36px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_322 {
+	overflow: visible;
+	position: absolute;
+	top: 8.55px;
+	left: 1.5px;
+	width: 21px;
+	height: 22.95px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_323 {
+	overflow: visible;
+	position: absolute;
+	top: 10.5px;
+	left: 25.5px;
+	width: 3px;
+	height: 3px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_324 {
+	overflow: visible;
+	position: absolute;
+	top: 4.5px;
+	left: 15px;
+	width: 19.5px;
+	height: 27px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Row_2 {
+	position: absolute;
+	width: 730px;
+	height: 83px;
+	left: 20px;
+	top: 192px;
+	overflow: visible;
+}
+.Divider_A24_Rectangle_9 {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 1px;
+	left: 0px;
+	top: 82px;
+}
+.Row_BG_A24_Rectangle_10 {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+}
+#North_Terrace_Campus {
+	position: absolute;
+	left: 575px;
+	top: 33px;
+	overflow: visible;
+	width: 122px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Label_A24_Group_20 {
+	position: absolute;
+	width: 90px;
+	height: 24px;
+	left: 361px;
+	top: 29px;
+	overflow: visible;
+}
+#Label_BG_A24_Rectangle_11 {
+	opacity: 0.2;
+}
+.Label_BG_A24_Rectangle_11 {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 24px;
+	left: 0px;
+	top: 0px;
+}
+#Label_Content_A24_Text_26 {
+	opacity: 0.5;
+	position: absolute;
+	margin-left: 28px;
+	margin-right: 30px;
+	top: 6px;
+	overflow: visible;
+	width: 33px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -6.5px;
+	text-align: center;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+}
+#Product_Title_A24_Text_27 {
+	position: absolute;
+	left: 76px;
+	top: 33px;
+	overflow: visible;
+	width: 45px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#assignment_24px {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 20px;
+	top: 21px;
+	overflow: visible;
+}
+.Path_319 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 40px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_320 {
+	overflow: visible;
+	position: absolute;
+	top: 1.667px;
+	left: 5px;
+	width: 30px;
+	height: 33.333px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Row_1 {
+	position: absolute;
+	width: 730px;
+	height: 83px;
+	left: 20px;
+	top: 109px;
+	overflow: visible;
+}
+.Divider_A24_Rectangle_12 {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 1px;
+	left: 0px;
+	top: 82px;
+}
+.Row_BG_A24_Rectangle_13 {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 82px;
+	left: 0px;
+	top: 0px;
+}
+#Computer_Science {
+	position: absolute;
+	left: 597px;
+	top: 33px;
+	overflow: visible;
+	width: 100px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: right;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#Label_A24_Group_23 {
+	position: absolute;
+	width: 90px;
+	height: 24px;
+	left: 359px;
+	top: 29px;
+	overflow: visible;
+}
+#Label_BG_A24_Rectangle_14 {
+	opacity: 0.2;
+}
+.Label_BG_A24_Rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 24px;
+	left: 0px;
+	top: 0px;
+}
+#Label_Content_A24_Text_29 {
+	opacity: 0.5;
+	position: absolute;
+	left: 23px;
+	top: 5px;
+	overflow: visible;
+	width: 45px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -6.5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+}
+#Product_Title_A24_Text_30 {
+	position: absolute;
+	left: 76px;
+	top: 33px;
+	overflow: visible;
+	width: 69px;
+	white-space: nowrap;
+	line-height: 20px;
+	margin-top: -3.5px;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(77,79,92,1);
+}
+#subject_24px {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	left: 20px;
+	top: 20px;
+	overflow: visible;
+}
+.Path_317 {
+	overflow: visible;
+	position: absolute;
+	top: 8.75px;
+	left: 7px;
+	width: 28px;
+	height: 24.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_318 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 42px;
+	height: 42px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Head_A24_Group_25 {
+	position: absolute;
+	width: 730px;
+	height: 45px;
+	left: 20px;
+	top: 64px;
+	overflow: visible;
+}
+.Head_BG {
+	position: absolute;
+	overflow: visible;
+	width: 730px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+#Location {
+	position: absolute;
+	left: 649px;
+	top: 17px;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(163,166,180,1);
+}
+#ID {
+	position: absolute;
+	left: 365px;
+	top: 17px;
+	overflow: visible;
+	width: 12px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(163,166,180,1);
+}
+#Information {
+	position: absolute;
+	left: 20px;
+	top: 17px;
+	overflow: visible;
+	width: 61px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(163,166,180,1);
+}
+#Course_Offering___Locations {
+	position: absolute;
+	left: 20px;
+	top: 21px;
+	overflow: visible;
+	width: 209px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(77,79,92,1);
 }
 #Group_245 {
 	position: absolute;
