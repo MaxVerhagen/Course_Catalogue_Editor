@@ -60,10 +60,10 @@ class CoursesController < ApplicationController
 
 	respond_to do |format|
 	  if @course.save
-		format.html { redirect_to @course, protocol: 'https://', notice: 'Course was successfully created.' }
+		format.html { redirect_to protocol: 'https://', action: 'index', notice: 'Course was successfully created.' }
 		format.json { render :show, status: :created, location: @course }
 	  else
-		format.html { render :new }
+		format.html { redirect_to protocol: 'https://', action: 'index' }
 		format.json { render json: @course.errors, protocol: 'https://', status: :unprocessable_entity }
 	  end
 	end
@@ -79,10 +79,10 @@ class CoursesController < ApplicationController
 
 	respond_to do |format|
 	  if @course.update(course_params)
-		format.html { redirect_to @course, notice: 'Course was successfully updated.' }
+		format.html { redirect_to protocol: 'https://', action: 'index', notice: 'Course was successfully updated.' }
 		format.json { render :show, status: :ok, location: @course }
 	  else
-		format.html { render :edit }
+		format.html { redirect_to protocol: 'https://', action: 'index' }
 		format.json { render json: @course.errors, status: :unprocessable_entity }
 	  end
 	end
