@@ -14,10 +14,10 @@ class CoursesController < ApplicationController
 		else
 			@sort = "ida"
 
-			@pagy, @courses = pagy(Course.all)
-			
+			@courses = Course.all
+		
 			if params[:i]== "1" then
-				@pagy, @courses = pagy(Course.active_courses)
+				@courses = Course.active_courses
 			end
 
 			if params.key?(:qid) then
@@ -38,7 +38,8 @@ class CoursesController < ApplicationController
 	def search
 		if !params[:course][:course_id].empty? then
 			redirect_to protocol: 'https://', action: 'index', qid: params[:course][:course_id], i: params[:course][:hide_inactive]
-		elsif !params[:course][:course_title] then
+		elsif !params[:course][:course_title].empty? then
+			puts "sdfsd"
 			redirect_to protocol: 'https://', action: 'index', qt: params[:course][:course_title], i: params[:course][:hide_inactive]
 		end
 	end
