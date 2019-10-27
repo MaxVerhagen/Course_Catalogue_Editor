@@ -13,7 +13,8 @@ Rails.application.routes.draw do
 		get 'logout' => :destroy
 	end
 	
-	get 'courses/history/:id', to: 'course_histories#show', as: 'course_history'
+	get 'courses/history/:id', to: 'course_histories#index', as: 'course_history'
+	get 'courses/history/detail/:id', to: 'course_histories#show', as: 'course_history_detail'
 
 	resources :courses
 	post "courses/search", to: "courses#search" 

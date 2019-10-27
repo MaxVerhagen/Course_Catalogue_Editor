@@ -4,12 +4,15 @@ class CourseHistoriesController < ApplicationController
   # GET /course_histories
   # GET /course_histories.json
   def index
-    @course_histories = CourseHistory.all
+	@course = Course.find params[:id]
+    @course_histories = @course.course_histories
   end
 
   # GET /course_histories/1
   # GET /course_histories/1.json
   def show
+	@course = CourseHistory.find params[:id]
+	puts "Max: #{@course.max_units}"
   end
 
   # GET /course_histories/new
