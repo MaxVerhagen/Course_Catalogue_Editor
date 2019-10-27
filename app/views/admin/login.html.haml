@@ -33,13 +33,15 @@
             %svg.Path_297_A25_Path_2{:viewbox => "-835.08 2509.809 322.917 2"}
               %path#Path_297_A25_Path_2{:d => "M -835.0799560546875 2509.80859375 C -835.0799560546875 2509.80859375 -512.1632690429688 2509.80859375 -512.1632690429688 2509.80859375", :fill => "transparent", "shape-rendering" => "auto", :stroke => "rgba(233,233,240,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "2px"}
           #Welcome_Back__Please_login_to_
-            %span Welcome Back, Please login to your account.
+            %span Welcome
+            %span=link_to "Back", courses_path
+            %span, Please login to your account.
           #RememberMe
             %input.Rectangle_165{:type => "checkbox"}/
             #Remember_me
               %span Remember me
           #Forgot_Password
-            %span Forgot Password
+            %span=link_to "Forgot Password", admin_adminlist_path
           #btn_login
             %svg.Rectangle_166
               %rect#Rectangle_166{:fill => "rgba(67,66,93,1)", :height => "41", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(67,66,93,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "150", :x => "0", :y => "0"}
@@ -49,7 +51,7 @@
           %svg.Rectangle_167
             %rect#Rectangle_167{:fill => "transparent", :height => "41", :rx => "4", :ry => "4", "shape-rendering" => "auto", :stroke => "rgba(67,66,93,1)", "stroke-linecap" => "butt", "stroke-linejoin" => "miter", "stroke-miterlimit" => "4", "stroke-width" => "1px", :width => "149", :x => "0", :y => "0"}
           #Sign_up
-            %span Sign up
+            %span= link_to "Sign up", admin_create_path
       #Group_244
         %svg.Rectangle_176
           %lineargradient#LinearGradientFill2{:spreadmethod => "pad", :x1 => "0.897", :x2 => "0.206", :y1 => "0.14", :y2 => "0.877"}

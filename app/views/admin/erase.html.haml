@@ -1,0 +1,5 @@
+= form_tag do
+    =label_tag :username, 'Username',:class => 'usernameText'
+    =text_field_tag :username, params[:testusername], :class => 'usernameInput'
+
+    =submit_tag "Create", :class => 'loginInput'
