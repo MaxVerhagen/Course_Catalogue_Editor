@@ -22,9 +22,3 @@ The purpose of the CCE is to allow teachers to view all courses and to edit the 
 - Group Project: n/a
 
 
-## Use Cases
-
-**Teachers:**
-
-**Admin:**
-
